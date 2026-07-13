@@ -24,11 +24,11 @@ permalink: /apps/lotto-check/
       <p>현재 제공 언어: 한국어</p>
     </div>
     <div class="link-grid">
-      <a class="link-card" href="{{ '/apps/lotto-check/support/ko-kr/' | relative_url }}">
+      <a class="link-card" href="{{ '/apps/lotto-check/support/' | relative_url }}">
         <strong>고객지원</strong>
         <span>자주 묻는 질문, 문제 해결 방법, 문의처</span>
       </a>
-      <a class="link-card" href="{{ '/apps/lotto-check/privacy/ko-kr/' | relative_url }}">
+      <a class="link-card" href="{{ '/apps/lotto-check/privacy/' | relative_url }}">
         <strong>개인정보처리방침</strong>
         <span>앱 데이터와 제3자 서비스의 처리 방식</span>
       </a>

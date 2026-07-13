@@ -1,18 +1,18 @@
 ---
 layout: default
 title: 앱과 지원 문서
-description: DDak Labs가 만드는 앱과 고객지원, 개인정보처리방침을 확인하세요.
+description: 앱 안내와 고객지원, 개인정보처리방침을 확인하세요.
 permalink: /
 ---
 
 <section class="home-hero">
   <div class="site-shell home-hero-inner">
     <div>
-      <p class="eyebrow">DDak Labs</p>
-      <h1>쓸모가 분명한<br>모바일 도구</h1>
-      <p class="hero-copy">DDak Labs가 운영하는 앱의 공식 안내와 고객지원, 개인정보처리방침을 한곳에서 제공합니다.</p>
+      <p class="eyebrow">APP SUPPORT</p>
+      <h1>앱 안내와<br>고객지원</h1>
+      <p class="hero-copy">앱 사용 안내와 고객지원, 개인정보처리방침을 한곳에서 확인할 수 있습니다.</p>
     </div>
-    <div class="hero-symbol" aria-hidden="true"><span>D</span><i></i></div>
+    <div class="hero-symbol" aria-hidden="true"><span>?</span><i></i></div>
   </div>
 </section>
 

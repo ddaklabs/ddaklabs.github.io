@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<section class="gateway-section">
+  <div class="site-shell gateway-panel">
+    <img src="{{ page.app_icon | relative_url }}" alt="{{ page.app_name }} 앱 아이콘">
+    <p class="eyebrow">{{ page.app_name }}</p>
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.description }}</p>
+    <div class="gateway-links" data-locale-gateway>
+      {% for item in page.available_locales %}
+        <a class="button" href="{{ item.url | relative_url }}" data-locale="{{ item.code }}" data-languages="{{ item.languages | join: ',' }}">{{ item.label }}로 보기</a>
+      {% endfor %}
+    </div>
+    <p class="gateway-contact">자동으로 이동하지 않으면 언어를 선택해 주세요. 문의: <a href="mailto:{{ site.company.email }}">{{ site.company.email }}</a></p>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll("[data-locale-gateway] [data-locale]"));
+    if (!links.length) return;
+
+    var preferred = [];
+    try {
+      var saved = localStorage.getItem("ddak-doc-locale");
+      if (saved) preferred.push(saved);
+    } catch (_) {}
+
+    if (navigator.languages) preferred = preferred.concat(navigator.languages);
+    if (navigator.language) preferred.push(navigator.language);
+
+    var target = null;
+    for (var i = 0; i < preferred.length && !target; i += 1) {
+      var language = String(preferred[i]).toLowerCase();
+      target = links.find(function (link) {
+        var locale = link.getAttribute("data-locale").toLowerCase();
+        var languages = link.getAttribute("data-languages").toLowerCase().split(",");
+        return locale === language || languages.some(function (code) {
+          return language === code || language.indexOf(code + "-") === 0;
+        });
+      });
+    }
+
+    window.location.replace((target || links[0]).href);
+  })();
+</script>

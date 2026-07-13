@@ -33,7 +33,7 @@ h1, h2, h3, strong { word-break: keep-all; }
 .site-header { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid rgba(228, 231, 236, .86); background: rgba(255,255,255,.94); backdrop-filter: blur(14px); }
 .header-inner { min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 800; }
-.brand-mark { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 8px; color: #fff; background: var(--ink); font-size: 18px; }
+.brand-mark { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 8px; color: #fff; background: var(--ink); font-size: 17px; }
 .site-nav { display: flex; align-items: center; gap: 24px; }
 .site-nav a { color: #424751; text-decoration: none; font-weight: 650; }
 .site-nav a:hover { color: var(--brand); }
@@ -105,6 +105,14 @@ h1, h2, h3, strong { word-break: keep-all; }
 .contact-panel { margin-top: 32px; padding: 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--soft); }
 .contact-panel h2 { margin-top: 0; }
 
+.gateway-section { min-height: calc(100vh - 249px); display: grid; place-items: center; padding-block: 64px; background: var(--soft); }
+.gateway-panel { max-width: 620px; padding: 38px; border: 1px solid var(--line); border-radius: 8px; background: #fff; text-align: center; }
+.gateway-panel > img { width: 82px; height: 82px; margin: 0 auto 20px; border-radius: 20px; }
+.gateway-panel h1 { margin: 0; font-size: 36px; }
+.gateway-panel > p:not(.eyebrow) { color: var(--muted); }
+.gateway-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 26px; }
+.gateway-contact { margin: 20px 0 0; font-size: 14px; }
+
 .site-footer { border-top: 1px solid var(--line); background: #111318; color: #fff; }
 .footer-inner { min-height: 180px; display: flex; align-items: center; justify-content: space-between; gap: 40px; padding-block: 36px; }
 .footer-inner p { margin: 6px 0 0; color: #aeb5c0; }
@@ -135,6 +143,7 @@ h1, h2, h3, strong { word-break: keep-all; }
   .document-aside nav { grid-template-columns: repeat(2, 1fr); }
   .prose h2 { margin-top: 42px; font-size: 24px; }
   .prose table { display: block; overflow-x: auto; }
+  .gateway-panel { padding: 28px 20px; }
   .footer-inner { align-items: start; flex-direction: column; }
   .footer-links { align-items: start; }
 }
