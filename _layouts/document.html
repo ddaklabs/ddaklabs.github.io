@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="document-hero">
+  <div class="site-shell document-hero-inner">
+    <nav class="breadcrumbs" aria-label="현재 위치">
+      <a href="{{ '/' | relative_url }}">DDak Labs</a>
+      <span aria-hidden="true">/</span>
+      <a href="{{ page.app_url | relative_url }}">{{ page.app_name }}</a>
+      <span aria-hidden="true">/</span>
+      <span>{{ page.document_label }}</span>
+    </nav>
+    <div class="document-title-row">
+      <div>
+        <p class="eyebrow">{{ page.app_name }}</p>
+        <h1>{{ page.title }}</h1>
+        {% if page.updated_at %}<p class="document-date">최종 수정일 {{ page.updated_at }}</p>{% endif %}
+      </div>
+      {% if page.locale_label %}<span class="locale-badge">{{ page.locale_label }}</span>{% endif %}
+    </div>
+  </div>
+</div>
+
+<div class="site-shell document-grid">
+  <aside class="document-aside" aria-label="문서 메뉴">
+    <a class="app-mini" href="{{ page.app_url | relative_url }}">
+      <img src="{{ page.app_icon | relative_url }}" alt="">
+      <span><strong>{{ page.app_name }}</strong><small>앱 안내</small></span>
+    </a>
+    <nav>
+      <a class="{% if page.document_type == 'support' %}active{% endif %}" href="{{ page.support_url | relative_url }}">고객지원</a>
+      <a class="{% if page.document_type == 'privacy' %}active{% endif %}" href="{{ page.privacy_url | relative_url }}">개인정보처리방침</a>
+    </nav>
+  </aside>
+  <article class="document-content prose">
+    {{ content }}
+  </article>
+</div>

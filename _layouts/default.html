@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="{{ page.locale | default: site.lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#f81d5b">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="icon" href="{{ '/assets/images/site-icon.svg' | relative_url }}" type="image/svg+xml">
+    {% if page.alternates %}
+      {% for alternate in page.alternates %}
+        <link rel="alternate" hreflang="{{ alternate.locale }}" href="{{ alternate.url | absolute_url }}">
+      {% endfor %}
+    {% endif %}
+  </head>
+  <body class="{% if page.page_class %}{{ page.page_class }}{% endif %}">
+    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+    {% include header.html %}
+    <main id="main-content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

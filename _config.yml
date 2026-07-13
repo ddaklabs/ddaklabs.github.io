@@ -1,0 +1,19 @@
+title: DDak Labs
+description: DDak Labs 앱 안내, 고객지원 및 개인정보처리방침
+url: "https://ddaklabs.github.io"
+baseurl: ""
+lang: ko-KR
+timezone: Asia/Seoul
+encoding: utf-8
+permalink: pretty
+markdown: kramdown
+
+company:
+  name: DDak Labs
+  email: ezkoon@gmail.com
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

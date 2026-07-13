@@ -1,0 +1,15 @@
+- slug: lotto-check
+  name: 로또 확인
+  summary: QR 당첨 확인과 회차별 구매내역 관리
+  icon: /assets/images/lotto-check-icon.png
+  platforms:
+    - iOS
+    - Android
+  locales:
+    - code: ko-KR
+      path: ko-kr
+      label: 한국어
+  links:
+    overview: /apps/lotto-check/
+    support: /apps/lotto-check/support/ko-kr/
+    privacy: /apps/lotto-check/privacy/ko-kr/
