@@ -16,7 +16,13 @@ layout: default
         <h1>{{ page.title }}</h1>
         {% if page.updated_at %}<p class="document-date">최종 수정일 {{ page.updated_at }}</p>{% endif %}
       </div>
-      {% if page.locale_label %}<span class="locale-badge">{{ page.locale_label }}</span>{% endif %}
+      {% if page.locale_label %}
+        {% if page.language_gateway_url %}
+          <a class="locale-badge" href="{{ page.language_gateway_url | append: '?choose=1' | relative_url }}" aria-label="문서 언어 변경">{{ page.locale_label }}</a>
+        {% else %}
+          <span class="locale-badge">{{ page.locale_label }}</span>
+        {% endif %}
+      {% endif %}
     </div>
   </div>
 </div>

@@ -4,6 +4,7 @@ title: 고객지원
 description: 로또 확인 앱 사용 중 발생하는 문제의 해결 방법과 고객지원 문의처를 안내합니다.
 locale: ko-KR
 locale_label: 한국어
+language_gateway_url: /apps/lotto-check/support/
 permalink: /apps/lotto-check/support/ko-kr/
 app_name: 로또 확인
 app_url: /apps/lotto-check/

@@ -4,6 +4,7 @@ title: 개인정보처리방침
 description: 로또 확인 앱에서 처리되는 기기 내부 데이터와 Firebase Analytics, Google AdMob 등 제3자 서비스 이용 내용을 안내합니다.
 locale: ko-KR
 locale_label: 한국어
+language_gateway_url: /apps/lotto-check/privacy/
 permalink: /apps/lotto-check/privacy/ko-kr/
 app_name: 로또 확인
 app_url: /apps/lotto-check/
