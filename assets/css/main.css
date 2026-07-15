@@ -33,7 +33,7 @@ h1, h2, h3, strong { word-break: keep-all; }
 .site-header { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid rgba(228, 231, 236, .86); background: rgba(255,255,255,.94); backdrop-filter: blur(14px); }
 .header-inner { min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 800; }
-.brand-mark { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 8px; color: #fff; background: var(--ink); font-size: 17px; }
+.brand-mark { width: 34px; height: 34px; border-radius: 8px; }
 .site-nav { display: flex; align-items: center; gap: 24px; }
 .site-nav a { color: #424751; text-decoration: none; font-weight: 650; }
 .site-nav a:hover { color: var(--brand); }
@@ -44,8 +44,7 @@ h1, h2, h3, strong { word-break: keep-all; }
 .home-hero h1 { margin: 0; max-width: 720px; font-size: clamp(40px, 6vw, 72px); line-height: 1.08; }
 .home-hero p.hero-copy { margin: 24px 0 0; max-width: 620px; color: var(--muted); font-size: 19px; }
 .hero-symbol { aspect-ratio: 1; max-width: 320px; justify-self: end; display: grid; place-items: center; border: 1px solid #d9dde5; background: #fff; border-radius: 8px; }
-.hero-symbol span { font-size: 120px; font-weight: 900; line-height: 1; }
-.hero-symbol i { position: absolute; width: 22px; height: 22px; border-radius: 50%; background: var(--brand); transform: translate(72px,-72px); }
+.hero-symbol img { width: 58%; height: auto; }
 
 .section { padding-block: 72px; }
 .section-header { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 28px; }
@@ -127,8 +126,6 @@ h1, h2, h3, strong { word-break: keep-all; }
   .site-nav { gap: 16px; }
   .home-hero-inner { min-height: 0; grid-template-columns: 1fr; gap: 40px; padding-block: 54px; }
   .hero-symbol { width: 180px; justify-self: start; }
-  .hero-symbol span { font-size: 74px; }
-  .hero-symbol i { width: 16px; height: 16px; transform: translate(46px,-48px); }
   .section { padding-block: 52px; }
   .section-header { display: block; }
   .section-header p { margin-top: 8px; }

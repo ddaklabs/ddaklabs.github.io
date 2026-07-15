@@ -12,7 +12,9 @@ permalink: /
       <h1>앱 안내와<br>고객지원</h1>
       <p class="hero-copy">앱 사용 안내와 고객지원, 개인정보처리방침을 한곳에서 확인할 수 있습니다.</p>
     </div>
-    <div class="hero-symbol" aria-hidden="true"><span>?</span><i></i></div>
+    <div class="hero-symbol" aria-hidden="true">
+      <img src="{{ '/assets/images/site-icon.svg' | relative_url }}" alt="">
+    </div>
   </div>
 </section>
 
