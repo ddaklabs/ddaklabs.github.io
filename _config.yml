@@ -10,7 +10,7 @@ markdown: kramdown
 
 company:
   name: DDak Labs
-  email: ezkoon@gmail.com
+  email: ddaklabs@gmail.com
 
 exclude:
   - Gemfile

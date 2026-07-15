@@ -65,7 +65,7 @@ updated_at: 2026년 7월 14일
 <div class="contact-panel">
   <h2>문의하기</h2>
   <p>해결되지 않는 문제는 아래 이메일로 보내 주세요. 확인 후 가능한 한 빠르게 답변드리겠습니다.</p>
-  <p><strong>이메일</strong><br><a href="mailto:ezkoon@gmail.com?subject=%5B%EB%A1%9C%EB%98%90%20%ED%99%95%EC%9D%B8%5D%20%EB%AC%B8%EC%9D%98">ezkoon@gmail.com</a></p>
+  <p><strong>이메일</strong><br><a href="mailto:ddaklabs@gmail.com?subject=%5B%EB%A1%9C%EB%98%90%20%ED%99%95%EC%9D%B8%5D%20%EB%AC%B8%EC%9D%98">ddaklabs@gmail.com</a></p>
   <p>문의에는 휴대전화 기종, OS 버전, 앱 버전, 문제 발생 시각과 재현 순서를 포함해 주세요. 복권 QR 원문이나 불필요한 개인정보는 보내지 마세요.</p>
 </div>
 
