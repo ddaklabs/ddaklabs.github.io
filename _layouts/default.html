@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="{{ page.locale | default: site.lang }}">
+<html lang="{{ page.locale | default: site.lang }}"{% if page.locale == 'ar' %} dir="rtl"{% endif %}>
+  {% assign localized_chrome = site.data.fridge_manager_docs.locales[page.locale_key].chrome %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light">
     <meta name="theme-color" content="#f81d5b">
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{% if localized_chrome %}DDak Labs{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ page.description | default: site.description | escape }}">
     <link rel="canonical" href="{{ page.url | absolute_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
@@ -17,7 +18,7 @@
     {% endif %}
   </head>
   <body class="{% if page.page_class %}{{ page.page_class }}{% endif %}">
-    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+    <a class="skip-link" href="#main-content">{% if localized_chrome %}{{ page.title }}{% else %}본문으로 바로가기{% endif %}</a>
     {% include header.html %}
     <main id="main-content">
       {{ content }}

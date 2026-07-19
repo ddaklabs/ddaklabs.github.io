@@ -51,6 +51,7 @@ h1, h2, h3, strong { word-break: keep-all; }
 .section-header h2 { margin: 0; font-size: 32px; }
 .section-header p { margin: 0; color: var(--muted); }
 .app-card { display: grid; grid-template-columns: 92px 1fr auto; gap: 24px; align-items: center; padding: 28px; border: 1px solid var(--line); border-radius: 8px; }
+.app-card + .app-card { margin-top: 16px; }
 .app-card > img { width: 92px; height: 92px; border-radius: 22px; }
 .app-card h3 { margin: 0 0 4px; font-size: 24px; }
 .app-card p { margin: 0; color: var(--muted); }
@@ -113,6 +114,12 @@ h1, h2, h3, strong { word-break: keep-all; }
 .gateway-panel > p:not(.eyebrow) { color: var(--muted); }
 .gateway-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 26px; }
 .gateway-contact { margin: 20px 0 0; font-size: 14px; }
+
+.fridge-app { --brand: #2f7d32; --brand-dark: #245f27; }
+.fridge-app .app-hero { background: #2f7d32; }
+.fridge-app .app-hero img { box-shadow: 0 24px 52px rgba(24, 73, 28, .28); }
+.fridge-app .document-aside nav a.active { background: #eaf5e5; }
+.fridge-app .notice { border-left-color: #6bc64a; background: #f2faed; color: #284a29; }
 
 .site-footer { border-top: 1px solid var(--line); background: #111318; color: #fff; }
 .footer-inner { min-height: 180px; display: flex; align-items: center; justify-content: space-between; gap: 40px; padding-block: 36px; }

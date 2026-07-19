@@ -36,6 +36,22 @@ bundle exec jekyll serve
 /apps/{app-slug}/privacy/
 ```
 
+## FridgeTick 문서 갱신
+
+FridgeTick의 고객지원과 개인정보처리방침은 앱의 i18n 사전과 스토어 메타데이터를 기준으로 18개 언어 문서를 생성합니다. 앱 번역을 바꾼 뒤 사이트 루트에서 아래 명령을 실행하고 생성된 문서와 데이터 파일을 함께 커밋합니다.
+
+```bash
+node scripts/generate-fridge-docs.mjs
+bundle exec jekyll build
+```
+
+스토어와 앱 설정에는 다음 고정 URL을 사용합니다.
+
+```text
+https://ddaklabs.github.io/apps/fridge-manager/support/
+https://ddaklabs.github.io/apps/fridge-manager/privacy/
+```
+
 ## 배포
 
 `main` 브랜치에 푸시하면 `.github/workflows/pages.yml`이 Jekyll 빌드와 GitHub Pages 배포를 수행합니다.

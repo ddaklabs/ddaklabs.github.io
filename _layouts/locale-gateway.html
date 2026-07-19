@@ -9,10 +9,10 @@ layout: default
     <p>{{ page.description }}</p>
     <div class="gateway-links" data-locale-gateway>
       {% for item in page.available_locales %}
-        <a class="button" href="{{ item.url | relative_url }}" data-locale="{{ item.code }}" data-languages="{{ item.languages | join: ',' }}">{{ item.label }}로 보기</a>
+        <a class="button" href="{{ item.url | relative_url }}" data-locale="{{ item.code }}" data-languages="{{ item.languages | join: ',' }}">{{ item.label }}{% unless page.page_class == 'fridge-app' %}로 보기{% endunless %}</a>
       {% endfor %}
     </div>
-    <p class="gateway-contact">자동으로 이동하지 않으면 언어를 선택해 주세요. 문의: <a href="mailto:{{ site.company.email }}">{{ site.company.email }}</a></p>
+    <p class="gateway-contact">{% if page.page_class == 'fridge-app' %}Choose a language. Contact: {% else %}자동으로 이동하지 않으면 언어를 선택해 주세요. 문의: {% endif %}<a href="mailto:{{ site.company.email }}">{{ site.company.email }}</a></p>
   </div>
 </section>
 

@@ -1,12 +1,13 @@
 <header class="site-header">
   <div class="site-shell header-inner">
-    <a class="brand" href="{{ '/' | relative_url }}" aria-label="앱 지원 센터 홈">
+    {% assign localized_chrome = site.data.fridge_manager_docs.locales[page.locale_key].chrome %}
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="{% if localized_chrome %}{{ localized_chrome.home }}{% else %}앱 지원 센터 홈{% endif %}">
       <img class="brand-mark" src="{{ '/assets/images/site-icon.svg' | relative_url }}" alt="">
-      <span>앱 지원 센터</span>
+      <span>{% if localized_chrome %}{{ localized_chrome.home }}{% else %}앱 지원 센터{% endif %}</span>
     </a>
-    <nav class="site-nav" aria-label="주요 메뉴">
-      <a href="{{ '/#apps' | relative_url }}">앱</a>
-      <a href="mailto:{{ site.company.email }}">문의</a>
+    <nav class="site-nav" aria-label="{% if localized_chrome %}{{ localized_chrome.guide }}{% else %}주요 메뉴{% endif %}">
+      <a href="{{ '/#apps' | relative_url }}">{% if localized_chrome %}{{ localized_chrome.guide }}{% else %}앱{% endif %}</a>
+      <a href="mailto:{{ site.company.email }}">{% if localized_chrome %}{{ localized_chrome.email }}{% else %}문의{% endif %}</a>
     </nav>
   </div>
 </header>

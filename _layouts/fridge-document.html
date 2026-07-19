@@ -1,0 +1,75 @@
+---
+layout: default
+---
+{% assign locale_data = site.data.fridge_manager_docs.locales[page.locale_key] %}
+{% assign chrome = locale_data.chrome %}
+{% assign support = locale_data.support %}
+{% assign privacy = locale_data.privacy %}
+<div class="document-hero">
+  <div class="site-shell document-hero-inner">
+    <nav class="breadcrumbs" aria-label="{{ chrome.guide }}">
+      <a href="{{ '/' | relative_url }}">{{ chrome.home }}</a>
+      <span aria-hidden="true">/</span>
+      <a href="{{ page.app_url | relative_url }}">{{ page.app_name }}</a>
+      <span aria-hidden="true">/</span>
+      <span>{{ page.document_label }}</span>
+    </nav>
+    <div class="document-title-row">
+      <div>
+        <p class="eyebrow">{{ page.app_name }}</p>
+        <h1>{{ page.title }}</h1>
+        <p class="document-date">{{ chrome.updated }} {{ page.updated_at }}</p>
+      </div>
+      <a class="locale-badge" href="{{ page.language_gateway_url | append: '?choose=1' | relative_url }}" aria-label="{{ chrome.language }}">{{ page.locale_label }}</a>
+    </div>
+  </div>
+</div>
+
+<div class="site-shell document-grid">
+  <aside class="document-aside" aria-label="{{ chrome.guide }}">
+    <a class="app-mini" href="{{ page.app_url | relative_url }}">
+      <img src="{{ page.app_icon | relative_url }}" alt="">
+      <span><strong>{{ page.app_name }}</strong><small>{{ chrome.guide }}</small></span>
+    </a>
+    <nav>
+      <a class="{% if page.document_type == 'support' %}active{% endif %}" href="{{ page.support_url | relative_url }}">{{ chrome.support }}</a>
+      <a class="{% if page.document_type == 'privacy' %}active{% endif %}" href="{{ page.privacy_url | relative_url }}">{{ chrome.privacy }}</a>
+    </nav>
+  </aside>
+  <article class="document-content prose">
+    {% if page.document_type == 'support' %}
+      <p>{{ support.intro }}</p>
+      <h2>{{ support.faqTitle }}</h2>
+      <h3>{{ support.faqAddQ }}</h3><p>{{ support.faqAddA }}</p>
+      <h3>{{ support.faqReminderQ }}</h3><p>{{ support.faqReminderA }}</p>
+      <h3>{{ support.faqBackupQ }}</h3><p>{{ support.faqBackupA }}</p>
+      <h3>{{ support.faqLanguageQ }}</h3><p>{{ support.faqLanguageA }}</p>
+      <h3>{{ locale_data.foodSafety.question }}</h3><p>{{ locale_data.foodSafety.answer }}</p>
+      <div class="contact-panel">
+        <h2>{{ support.contactTitle }}</h2>
+        <p>{{ support.contactBody }}</p>
+        <p><strong>{{ chrome.email }}</strong><br><a href="mailto:{{ site.company.email }}?subject=%5BFridgeTick%5D%20Support">{{ site.company.email }}</a></p>
+      </div>
+    {% else %}
+      <p>{{ privacy.intro }}</p>
+      <div class="callout"><strong>{{ chrome.core }}</strong><br>{{ privacy.localBody }}</div>
+      <h2>{{ privacy.localTitle }}</h2><p>{{ privacy.localBody }}</p>
+      <h2>{{ privacy.collectionTitle }}</h2><p>{{ privacy.collectionBody }}</p>
+      <h2>{{ privacy.adsTitle }}</h2><p>{{ privacy.adsBody }}</p>
+      <h2>{{ privacy.notificationTitle }}</h2><p>{{ privacy.notificationBody }}</p>
+      <h2>{{ privacy.rightsTitle }}</h2><p>{{ privacy.rightsBody }}</p>
+      <h2>{{ privacy.deletionTitle }}</h2><p>{{ privacy.deletionBody }}</p>
+      <h2>{{ chrome.providers }}</h2>
+      <ul>
+        <li><strong>Firebase Analytics</strong> — {{ privacy.collectionTitle }} · <a href="https://firebase.google.com/support/privacy">{{ chrome.providerPolicy }}</a></li>
+        <li><strong>Google Mobile Ads / UMP</strong> — {{ privacy.adsTitle }} · <a href="https://business.safety.google/privacy/">{{ chrome.providerPolicy }}</a></li>
+        <li><strong>Gmail</strong> — {{ support.contactTitle }} · <a href="https://policies.google.com/privacy">{{ chrome.providerPolicy }}</a></li>
+      </ul>
+      <div class="contact-panel">
+        <h2>{{ support.contactTitle }}</h2>
+        <p>{{ support.contactBody }}</p>
+        <p><strong>{{ chrome.email }}</strong><br><a href="mailto:{{ site.company.email }}?subject=%5BFridgeTick%5D%20Privacy">{{ site.company.email }}</a></p>
+      </div>
+    {% endif %}
+  </article>
+</div>

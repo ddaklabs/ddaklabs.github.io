@@ -13,3 +13,70 @@
     overview: /apps/lotto-check/
     support: /apps/lotto-check/support/
     privacy: /apps/lotto-check/privacy/
+
+- slug: fridge-manager
+  name: FridgeTick · 냉장고 관리
+  summary: 냉장·냉동·실온 식품과 유통기한 관리
+  icon: /assets/images/fridge-manager-icon.png
+  platforms:
+    - iOS
+    - Android
+  locales:
+    - code: en
+      path: en
+      label: English
+    - code: ko-KR
+      path: ko-kr
+      label: 한국어
+    - code: ja
+      path: ja
+      label: 日本語
+    - code: es
+      path: es
+      label: Español
+    - code: pt-BR
+      path: pt-br
+      label: Português (Brasil)
+    - code: de
+      path: de
+      label: Deutsch
+    - code: fr
+      path: fr
+      label: Français
+    - code: zh-Hans
+      path: zh-hans
+      label: 简体中文
+    - code: zh-Hant
+      path: zh-hant
+      label: 繁體中文
+    - code: it
+      path: it
+      label: Italiano
+    - code: id
+      path: id
+      label: Bahasa Indonesia
+    - code: th
+      path: th
+      label: ไทย
+    - code: vi
+      path: vi
+      label: Tiếng Việt
+    - code: hi
+      path: hi
+      label: हिन्दी
+    - code: ar
+      path: ar
+      label: العربية
+    - code: tr
+      path: tr
+      label: Türkçe
+    - code: pl
+      path: pl
+      label: Polski
+    - code: ru
+      path: ru
+      label: Русский
+  links:
+    overview: /apps/fridge-manager/
+    support: /apps/fridge-manager/support/
+    privacy: /apps/fridge-manager/privacy/
