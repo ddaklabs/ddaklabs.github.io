@@ -14,7 +14,7 @@ document_type: support
 document_label: "الدعم"
 support_url: /apps/fridge-manager/support/ar/
 privacy_url: /apps/fridge-manager/privacy/ar/
-updated_at: 2026-07-19
+updated_at: 2026-07-20
 page_class: fridge-app
 alternates:
   - locale: en

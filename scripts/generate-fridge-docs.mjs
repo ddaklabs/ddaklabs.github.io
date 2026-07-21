@@ -109,7 +109,7 @@ function documentPage(spec, kind, allSpecs) {
   const title = kind === "support" ? translation.support.title : translation.privacy.title;
   const description = kind === "support" ? translation.support.intro : translation.privacy.intro;
   const alternates = allSpecs.map((item) => `  - locale: ${item.code}\n    url: /apps/fridge-manager/${kind}/${item.path}/`).join("\n");
-  return `---\nlayout: fridge-document\ntitle: ${quote(title)}\ndescription: ${quote(description)}\nlocale: ${spec.code}\nlocale_key: ${quote(spec.key)}\nlocale_label: ${quote(spec.label)}\nlanguage_gateway_url: /apps/fridge-manager/${kind}/\npermalink: /apps/fridge-manager/${kind}/${spec.path}/\napp_name: ${quote(metadata.appName)}\napp_url: /apps/fridge-manager/\napp_icon: /assets/images/fridge-manager-icon.png\ndocument_type: ${kind}\ndocument_label: ${quote(title)}\nsupport_url: /apps/fridge-manager/support/${spec.path}/\nprivacy_url: /apps/fridge-manager/privacy/${spec.path}/\nupdated_at: 2026-07-19\npage_class: fridge-app\nalternates:\n${alternates}\n---\n`;
+  return `---\nlayout: fridge-document\ntitle: ${quote(title)}\ndescription: ${quote(description)}\nlocale: ${spec.code}\nlocale_key: ${quote(spec.key)}\nlocale_label: ${quote(spec.label)}\nlanguage_gateway_url: /apps/fridge-manager/${kind}/\npermalink: /apps/fridge-manager/${kind}/${spec.path}/\napp_name: ${quote(metadata.appName)}\napp_url: /apps/fridge-manager/\napp_icon: /assets/images/fridge-manager-icon.png\ndocument_type: ${kind}\ndocument_label: ${quote(title)}\nsupport_url: /apps/fridge-manager/support/${spec.path}/\nprivacy_url: /apps/fridge-manager/privacy/${spec.path}/\nupdated_at: 2026-07-20\npage_class: fridge-app\nalternates:\n${alternates}\n---\n`;
 }
 
 function gatewayPage(kind, specs) {

@@ -14,7 +14,7 @@ document_type: privacy
 document_label: "개인정보 처리"
 support_url: /apps/fridge-manager/support/ko-kr/
 privacy_url: /apps/fridge-manager/privacy/ko-kr/
-updated_at: 2026-07-19
+updated_at: 2026-07-20
 page_class: fridge-app
 alternates:
   - locale: en

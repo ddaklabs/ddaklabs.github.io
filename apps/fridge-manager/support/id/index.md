@@ -14,7 +14,7 @@ document_type: support
 document_label: "Dukungan"
 support_url: /apps/fridge-manager/support/id/
 privacy_url: /apps/fridge-manager/privacy/id/
-updated_at: 2026-07-19
+updated_at: 2026-07-20
 page_class: fridge-app
 alternates:
   - locale: en

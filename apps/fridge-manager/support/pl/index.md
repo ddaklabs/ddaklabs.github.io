@@ -14,7 +14,7 @@ document_type: support
 document_label: "Pomoc"
 support_url: /apps/fridge-manager/support/pl/
 privacy_url: /apps/fridge-manager/privacy/pl/
-updated_at: 2026-07-19
+updated_at: 2026-07-20
 page_class: fridge-app
 alternates:
   - locale: en

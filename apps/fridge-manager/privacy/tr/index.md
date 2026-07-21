@@ -14,7 +14,7 @@ document_type: privacy
 document_label: "Gizlilik"
 support_url: /apps/fridge-manager/support/tr/
 privacy_url: /apps/fridge-manager/privacy/tr/
-updated_at: 2026-07-19
+updated_at: 2026-07-20
 page_class: fridge-app
 alternates:
   - locale: en

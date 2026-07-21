@@ -28,7 +28,7 @@ page_class: fridge-app
     <div class="link-grid">
       <a class="link-card" href="{{ '/apps/fridge-manager/support/' | relative_url }}">
         <strong>고객지원</strong>
-        <span>등록, 알림, 백업, 언어 설정과 문제 해결</span>
+        <span>등록, 알림, 데이터 삭제, 언어 설정과 문제 해결</span>
       </a>
       <a class="link-card" href="{{ '/apps/fridge-manager/privacy/' | relative_url }}">
         <strong>개인정보처리방침</strong>
