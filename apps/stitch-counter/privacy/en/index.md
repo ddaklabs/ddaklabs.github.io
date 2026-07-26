@@ -13,30 +13,34 @@ document_type: privacy
 document_label: Privacy Policy
 support_url: /apps/stitch-counter/support/en/
 privacy_url: /apps/stitch-counter/privacy/en/
-updated_at: July 25, 2026
+updated_at: July 26, 2026
 ---
 
-Stitch Counter is designed to work offline and keep project data on your device.
+Stitch Counter keeps your knitting and crochet project content on your device. The app uses Google services for basic usage analytics and advertising as described below.
 
-## Data collected by the app
+## Project data stored on your device
 
-The app does not require an account and does not collect personal information, analytics, advertising identifiers, location, contacts, photos, pattern files, or usage events.
+Project names, counts, repeat settings, row instructions, appearance settings, and haptic preferences are stored in the app's local storage. This project content is not sent to DDak Labs, Firebase, or AdMob. The app does not require an account and does not access your contacts, photos, pattern files, or precise location.
 
-## Data stored on your device
+## Analytics
 
-Project names, counts, repeat settings, row instructions, appearance settings, and haptic preferences are stored in the app's local storage. DDak Labs does not receive this data.
+The app uses Google Firebase Analytics to understand basic app usage and reliability. Events may include app sessions, screen views, completion of a row, creation of a project, changes to non-sensitive settings, and whether an ad loaded or was shown. Project names, row notes, pattern instructions, and exact counter values are never included in analytics events. Google may process device and app information such as app version, device type, operating system, approximate location derived from IP address, and diagnostic or interaction data.
 
-## Network services and third parties
+## Advertising
 
-The released app does not use a backend, advertising SDK, analytics SDK, cloud synchronization, or third-party tracking service.
+The app uses Google AdMob to show a banner advertisement on the Projects screen. AdMob and its advertising partners may process device identifiers, IP address, approximate location, ad interactions, and diagnostic information to provide, measure, prevent fraud in, and—where you have consented—personalize advertising.
+
+In regions where consent is required, the app requests your choices through Google's User Messaging Platform before requesting ads. You can review or change available choices from **Settings → Privacy choices**. On iOS, Apple may also ask whether you allow tracking. Declining personalized advertising or tracking does not disable the app's counting features.
+
+For more information about how Google handles information, see [Google's Privacy & Terms](https://policies.google.com/privacy).
 
 ## Data retention and deletion
 
-Local data remains until you delete projects, reset app data, or remove the app. Removing the app can permanently remove its data. Operating-system device backups may include app data according to your backup settings.
+Local project data remains until you delete projects, reset app data, or remove the app. Removing the app can permanently remove its local data. Operating-system device backups may include app data according to your backup settings. Analytics and advertising data is retained by Google according to Google's settings and policies.
 
 ## Children’s privacy
 
-The app does not knowingly collect personal information from children or any other user.
+Stitch Counter is intended for a general audience and is not directed to children. DDak Labs does not knowingly collect project content or contact information from children.
 
 ## Changes and contact
 
