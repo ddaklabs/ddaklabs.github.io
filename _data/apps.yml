@@ -80,3 +80,37 @@
     overview: /apps/fridge-manager/
     support: /apps/fridge-manager/support/
     privacy: /apps/fridge-manager/privacy/
+
+- slug: rider-ledger-calendar
+  name: Rider Ledger · 라이더 장부
+  summary: 배달 수입·지출과 월간 순수익을 기록하는 라이더 장부
+  icon: /assets/images/rider-ledger-calendar-icon.png
+  platforms:
+    - iOS
+    - Android
+  locales:
+    - code: en
+      path: en
+      label: English
+    - code: ko-KR
+      path: ko-kr
+      label: 한국어
+    - code: ja
+      path: ja
+      label: 日本語
+    - code: zh-Hant
+      path: zh-hant
+      label: 繁體中文
+    - code: zh-HK
+      path: zh-hk
+      label: 香港繁體
+    - code: vi
+      path: vi
+      label: Tiếng Việt
+    - code: id
+      path: id
+      label: Bahasa Indonesia
+  links:
+    overview: /apps/rider-ledger-calendar/
+    support: /apps/rider-ledger-calendar/support/
+    privacy: /apps/rider-ledger-calendar/privacy/

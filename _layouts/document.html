@@ -3,8 +3,8 @@ layout: default
 ---
 <div class="document-hero">
   <div class="site-shell document-hero-inner">
-    <nav class="breadcrumbs" aria-label="현재 위치">
-      <a href="{{ '/' | relative_url }}">앱 지원</a>
+    <nav class="breadcrumbs" aria-label="{{ page.breadcrumb_label | default: '현재 위치' }}">
+      <a href="{{ '/' | relative_url }}">{{ page.home_label | default: '앱 지원' }}</a>
       <span aria-hidden="true">/</span>
       <a href="{{ page.app_url | relative_url }}">{{ page.app_name }}</a>
       <span aria-hidden="true">/</span>
@@ -14,11 +14,11 @@ layout: default
       <div>
         <p class="eyebrow">{{ page.app_name }}</p>
         <h1>{{ page.title }}</h1>
-        {% if page.updated_at %}<p class="document-date">최종 수정일 {{ page.updated_at }}</p>{% endif %}
+        {% if page.updated_at %}<p class="document-date">{{ page.updated_label | default: '최종 수정일' }} {{ page.updated_at }}</p>{% endif %}
       </div>
       {% if page.locale_label %}
         {% if page.language_gateway_url %}
-          <a class="locale-badge" href="{{ page.language_gateway_url | append: '?choose=1' | relative_url }}" aria-label="문서 언어 변경">{{ page.locale_label }}</a>
+          <a class="locale-badge" href="{{ page.language_gateway_url | append: '?choose=1' | relative_url }}" aria-label="{{ page.change_language_label | default: '문서 언어 변경' }}">{{ page.locale_label }}</a>
         {% else %}
           <span class="locale-badge">{{ page.locale_label }}</span>
         {% endif %}
@@ -28,14 +28,14 @@ layout: default
 </div>
 
 <div class="site-shell document-grid">
-  <aside class="document-aside" aria-label="문서 메뉴">
+  <aside class="document-aside" aria-label="{{ page.document_menu_label | default: '문서 메뉴' }}">
     <a class="app-mini" href="{{ page.app_url | relative_url }}">
       <img src="{{ page.app_icon | relative_url }}" alt="">
-      <span><strong>{{ page.app_name }}</strong><small>앱 안내</small></span>
+      <span><strong>{{ page.app_name }}</strong><small>{{ page.app_overview_label | default: '앱 안내' }}</small></span>
     </a>
     <nav>
-      <a class="{% if page.document_type == 'support' %}active{% endif %}" href="{{ page.support_url | relative_url }}">고객지원</a>
-      <a class="{% if page.document_type == 'privacy' %}active{% endif %}" href="{{ page.privacy_url | relative_url }}">개인정보처리방침</a>
+      <a class="{% if page.document_type == 'support' %}active{% endif %}" href="{{ page.support_url | relative_url }}">{{ page.support_nav_label | default: '고객지원' }}</a>
+      <a class="{% if page.document_type == 'privacy' %}active{% endif %}" href="{{ page.privacy_url | relative_url }}">{{ page.privacy_nav_label | default: '개인정보처리방침' }}</a>
     </nav>
   </aside>
   <article class="document-content prose">
