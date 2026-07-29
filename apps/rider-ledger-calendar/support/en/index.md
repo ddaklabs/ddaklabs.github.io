@@ -38,7 +38,7 @@ Check the selected country, currency, income/expense type, and date. Edit the re
 
 ### How do backup and restore work?
 
-Your records are stored on the phone first. Keep the backup ID private and write it down. Choose cloud Backup to update the recoverable copy. Restore replaces the current local ledger with the selected backup, so make a file backup first if you need both versions.
+Your records are stored on the phone first. The first time you choose cloud Backup, the app creates a unique backup ID and uploads the recoverable copy. Keep the ID private and write it down after the backup succeeds. Restore replaces the current local ledger with the selected backup, so make a file backup first if you need both versions.
 
 You can also export a JSON backup file and store it in a location you control. Do not edit the file manually.
 
@@ -53,6 +53,10 @@ The privacy-options entry is available only where Google requires it. If it is n
 ### How do I report a translation problem?
 
 Use **Settings → Report translation issue**. The email draft includes your selected country and language; remove any information you do not want to send.
+
+### How do I request cloud-backup deletion?
+
+Cloud-backup deletion is not available inside the app. Send a request with the backup ID to [ddaklabs@gmail.com](mailto:ddaklabs@gmail.com?subject=%5BRider%20Ledger%5D%20Cloud%20backup%20deletion). DDak Labs may ask for information needed to verify the request before deletion.
 
 ## Basic troubleshooting
 

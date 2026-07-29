@@ -26,27 +26,27 @@ breadcrumb_label: 目前位置
 
 DDak Labs（下稱「我們」）營運外賣記帳。本政策說明哪些資料留在裝置、使用雲端備份時傳送哪些資料，以及分析與廣告服務可能處理的資料。
 
-<div class="callout"><strong>重點</strong><br>帳簿儲存在裝置。App 會建立還原用備份 ID 並初始化雲端備份；其後在你選擇備份時更新。Firebase Analytics 只記錄少量、不含金額或備註的功能事件。Google AdMob 按所在地區可用的同意選項提供廣告。</div>
+<div class="callout"><strong>重點</strong><br>在你選擇雲端備份前，帳簿只會儲存在裝置。App 使用 Google 服務進行基本使用分析及提供廣告。</div>
 
 ## 1. 處理的資料
 
-App 會在裝置 SQLite 儲存日期、國家與貨幣、收入或支出、平台或分類、金額、自訂名稱、送單數、距離、工作時間、目標、預計稅率、快捷金額、外觀、語言及備份設定。JSON 備份或會包含相同資料；除非你主動分享，DDak Labs 不會收到檔案。
+收入與支出記錄、工作相關資料、目標及 App 設定會儲存在裝置。匯出的備份檔或會包含相同資料。除非你選擇雲端備份或主動傳送檔案，DDak Labs 不會收到帳簿。
 
-首次使用時，App 會建立隨機備份 ID 並向備份服務發出初始要求。雲端備份或會包含上述帳簿與設定、備份 ID、備份時間及摘要數字，但不包括姓名、電郵、電話、聯絡人或精確位置。知道備份 ID 的人或可還原資料，請勿公開。
+初始設定時不會建立備份 ID。首次按下雲端備份時，App 才會建立唯一 ID，並將帳簿、設定、備份時間及概要資料傳送至備份服務以供日後還原。請勿公開還原所需的備份 ID。
 
-Firebase Analytics 或會處理 App 啟動、建立或更新記錄、執行備份，以及裝置與 App 資訊、大概地區、服務識別碼和診斷資料。分析事件不包含帳簿金額、平台名稱、自訂名稱、日期、距離或工作時間。
+Firebase Analytics 或會處理基本 App 使用、裝置與 App 資訊、大概地區、識別碼及診斷資料，以改善服務。金額與自訂名稱等帳簿內容不會包含在分析事件中。
 
-Google AdMob 或會處理廣告識別碼、IP 地址、大概位置、裝置與 App 資訊、廣告要求、展示、互動及診斷資料。App 要求非個人化廣告，必要地區會在要求廣告前顯示 Google 同意畫面。聯絡支援時，我們與 Gmail 或會處理你的電郵地址、內容及附件。
+Google AdMob 或會處理裝置、廣告、網絡、互動、大概地區及診斷資料，以提供與衡量廣告並防止濫用。App 要求非個人化廣告，必要地區會在要求廣告前提供廣告私隱選項。聯絡支援時，我們與 Gmail 或會處理你的電郵地址、內容及附件。
 
 ## 2. 外部服務及保留
 
-DDak Labs 使用 Cloudflare Workers 與 D1 作備份及還原；Google Firebase Analytics 作使用分析；Google AdMob 與 User Messaging Platform 作廣告、同意及防止詐騙；Gmail 作支援通信。請參閱 [Google 私隱政策](https://policies.google.com/privacy)及 [Cloudflare 私隱政策](https://www.cloudflare.com/privacypolicy/)。我們不出售個人資料。
+DDak Labs 使用 Cloudflare 提供使用者選擇的備份及還原；Google Firebase Analytics 作使用分析；Google AdMob 作廣告、私隱選擇及防止詐騙；Gmail 作支援通信。請參閱 [Google 私隱政策](https://policies.google.com/privacy)及 [Cloudflare 私隱政策](https://www.cloudflare.com/privacypolicy/)。我們不出售個人資料。
 
-本機記錄保留至你刪除、清除 App 資料或移除 App。檔案備份留在儲存或分享位置。雲端備份保留至被新備份覆蓋或由 DDak Labs 刪除；如需刪除，請附上備份 ID 電郵申請。Google 資料依其服務設定及政策保留。
+本機記錄保留至你刪除、清除 App 資料或移除 App。檔案備份留在儲存或分享位置。雲端備份保留至被新備份覆蓋或由 DDak Labs 刪除；雲端備份刪除只接受附上備份 ID 的電郵申請。Google 資料依其服務設定及政策保留。
 
 ## 3. 安全、跨境處理及兒童
 
-網絡要求使用 HTTPS。備份 ID 是還原憑證，請勿公開。Google 與 Cloudflare 或會在你所在國家以外處理資料。本 App 並非為兒童而設，亦不會要求兒童姓名或聯絡資料。
+Google 與 Cloudflare 或會在你所在國家以外處理資料。本 App 並非為兒童而設，亦不會要求兒童姓名或聯絡資料。
 
 ## 4. 聯絡
 

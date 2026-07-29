@@ -38,7 +38,7 @@ Periksa negara, mata uang, jenis pemasukan/pengeluaran, dan tanggal, lalu edit c
 
 ### Bagaimana cadangan dan pemulihan bekerja?
 
-Catatan disimpan di ponsel terlebih dahulu. Simpan ID cadangan secara pribadi dan catat di tempat lain. Pilih Cadangan cloud untuk memperbarui salinan pemulihan. Pemulihan mengganti catatan lokal saat ini dengan cadangan; ekspor file JSON lebih dulu jika Anda memerlukan kedua versi. DDak Labs tidak dapat menemukan kembali ID cadangan yang terlupa.
+Catatan disimpan di ponsel terlebih dahulu. Saat pertama kali memilih Cadangan cloud, aplikasi membuat ID unik dan mengunggah salinan pemulihan. Setelah pencadangan berhasil, simpan ID yang ditampilkan secara pribadi dan catat di tempat lain. Pemulihan mengganti catatan lokal saat ini dengan cadangan; ekspor file JSON lebih dulu jika Anda memerlukan kedua versi. DDak Labs tidak dapat menemukan kembali ID yang terlupa.
 
 ### Pilihan privasi iklan tidak terlihat
 
@@ -47,6 +47,10 @@ Pilihan ini hanya tersedia di wilayah yang diwajibkan Google. Jika tidak muncul,
 ### Melaporkan masalah terjemahan
 
 Pilih **Pengaturan → Laporkan masalah terjemahan**. Hapus informasi yang tidak ingin Anda kirim sebelum mengirim email.
+
+### Meminta penghapusan cadangan cloud
+
+Cadangan cloud tidak dapat dihapus dari dalam aplikasi. Kirim permintaan beserta ID cadangan ke [ddaklabs@gmail.com](mailto:ddaklabs@gmail.com?subject=%5BBuku%20Kurir%5D%20Penghapusan%20cadangan%20cloud). DDak Labs dapat meminta informasi yang diperlukan untuk memverifikasi permintaan sebelum penghapusan.
 
 ## Pemecahan masalah dasar
 

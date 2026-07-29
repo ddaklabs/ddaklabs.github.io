@@ -26,21 +26,21 @@ breadcrumb_label: Vị trí hiện tại
 
 DDak Labs (“chúng tôi”) vận hành Sổ Shipper. Chính sách này giải thích dữ liệu nào được lưu trên thiết bị, dữ liệu nào được gửi khi dùng sao lưu đám mây và dữ liệu mà dịch vụ phân tích hoặc quảng cáo có thể xử lý.
 
-<div class="callout"><strong>Tóm tắt</strong><br>Sổ thu chi được lưu trên thiết bị. Ứng dụng tạo mã sao lưu để khôi phục và khởi tạo bản sao lưu đám mây; các bản sao lưu sau được cập nhật khi bạn chọn Sao lưu. Firebase Analytics chỉ ghi lại một số sự kiện tính năng, không gồm số tiền hoặc ghi chú. Google AdMob cung cấp quảng cáo theo lựa chọn đồng ý có tại khu vực của bạn.</div>
+<div class="callout"><strong>Tóm tắt</strong><br>Sổ thu chi chỉ được lưu trên thiết bị cho đến khi bạn chọn sao lưu đám mây. Ứng dụng dùng dịch vụ Google để phân tích sử dụng cơ bản và cung cấp quảng cáo.</div>
 
 ## 1. Dữ liệu được xử lý
 
-Ứng dụng lưu ngày, quốc gia và tiền tệ, loại thu hoặc chi, nền tảng hoặc danh mục, số tiền, nhãn tùy chọn, số đơn, quãng đường, thời gian làm việc, mục tiêu, tỷ lệ thuế ước tính, số tiền nhanh, giao diện, ngôn ngữ và trạng thái sao lưu trong SQLite trên thiết bị. Tệp JSON có thể chứa cùng dữ liệu; DDak Labs không nhận tệp trừ khi bạn chủ động chia sẻ.
+Các khoản thu chi, thông tin công việc, mục tiêu và cài đặt ứng dụng được lưu trên thiết bị. Tệp sao lưu đã xuất có thể chứa cùng dữ liệu. DDak Labs không nhận sổ thu chi trừ khi bạn chọn sao lưu đám mây hoặc tự gửi tệp.
 
-Khi sử dụng lần đầu, ứng dụng tạo mã sao lưu ngẫu nhiên và gửi yêu cầu ban đầu đến dịch vụ sao lưu. Bản sao lưu đám mây có thể gồm sổ thu chi, cài đặt, mã và thời gian sao lưu cùng số liệu tổng hợp; không gồm tên, email, số điện thoại, danh bạ hoặc vị trí chính xác. Người biết mã sao lưu có thể khôi phục dữ liệu, vì vậy không công khai mã.
+Không có mã sao lưu nào được tạo trong thiết lập ban đầu. Khi bạn nhấn sao lưu đám mây lần đầu, ứng dụng mới tạo một mã duy nhất và gửi sổ thu chi, cài đặt, thời gian cùng thông tin tóm tắt đến dịch vụ sao lưu để khôi phục sau này. Không công khai mã cần để khôi phục.
 
-Firebase Analytics có thể xử lý lần mở ứng dụng, việc tạo/cập nhật bản ghi hoặc chạy sao lưu, thông tin thiết bị và ứng dụng, khu vực gần đúng, mã định danh dịch vụ và dữ liệu chẩn đoán. Sự kiện phân tích không chứa số tiền, tên nền tảng, nhãn tự nhập, ngày, quãng đường hoặc thời gian làm việc.
+Firebase Analytics có thể xử lý thông tin sử dụng ứng dụng cơ bản, thiết bị/ứng dụng, khu vực gần đúng, mã định danh và dữ liệu chẩn đoán để cải thiện dịch vụ. Nội dung sổ như số tiền và nhãn tự nhập không được đưa vào sự kiện phân tích.
 
-Google AdMob có thể xử lý mã quảng cáo, địa chỉ IP, vị trí gần đúng, thông tin thiết bị/ứng dụng, yêu cầu, lượt hiển thị, tương tác và chẩn đoán quảng cáo. Ứng dụng yêu cầu quảng cáo không cá nhân hóa và hiển thị biểu mẫu đồng ý của Google trước khi yêu cầu quảng cáo tại nơi cần thiết. Khi bạn gửi email hỗ trợ, chúng tôi và Gmail có thể xử lý địa chỉ email, nội dung và tệp bạn đính kèm.
+Google AdMob có thể xử lý thông tin thiết bị, quảng cáo, mạng, tương tác, khu vực gần đúng và chẩn đoán để cung cấp, đo lường quảng cáo và ngăn lạm dụng. Ứng dụng yêu cầu quảng cáo không cá nhân hóa và cung cấp lựa chọn quyền riêng tư quảng cáo trước khi yêu cầu quảng cáo tại nơi cần thiết. Khi bạn gửi email hỗ trợ, chúng tôi và Gmail có thể xử lý địa chỉ email, nội dung và tệp bạn đính kèm.
 
 ## 2. Dịch vụ bên ngoài
 
-- DDak Labs trên Cloudflare Workers và D1: sao lưu và khôi phục bằng mã sao lưu
+- Dịch vụ sao lưu của DDak Labs sử dụng Cloudflare: sao lưu và khôi phục do người dùng lựa chọn
 - Google Firebase Analytics: phân tích mức sử dụng tổng hợp và độ ổn định
 - Google AdMob và User Messaging Platform: quảng cáo, đồng ý, đo lường và chống gian lận
 - Google Gmail: trao đổi hỗ trợ
@@ -49,11 +49,11 @@ Xem [Chính sách quyền riêng tư của Google](https://policies.google.com/p
 
 ## 3. Lưu giữ, xóa và lựa chọn
 
-Dữ liệu cục bộ còn đến khi bạn xóa bản ghi, xóa dữ liệu ứng dụng hoặc gỡ ứng dụng. Tệp sao lưu còn tại nơi bạn lưu hoặc chia sẻ. Bản sao lưu đám mây được giữ để khôi phục đến khi bị ghi đè hoặc được DDak Labs xóa; để yêu cầu xóa, hãy gửi email kèm mã sao lưu. Google lưu dữ liệu theo cài đặt và chính sách dịch vụ của họ.
+Dữ liệu cục bộ còn đến khi bạn xóa bản ghi, xóa dữ liệu ứng dụng hoặc gỡ ứng dụng. Tệp sao lưu còn tại nơi bạn lưu hoặc chia sẻ. Bản sao lưu đám mây được giữ để khôi phục đến khi bị ghi đè hoặc được DDak Labs xóa. Việc xóa bản sao lưu đám mây chỉ được xử lý qua yêu cầu email kèm mã sao lưu. Google lưu dữ liệu theo cài đặt và chính sách dịch vụ của họ.
 
 ## 4. Bảo mật, xử lý quốc tế và trẻ em
 
-Yêu cầu mạng dùng HTTPS. Mã sao lưu là thông tin khôi phục, không nên công khai. Google và Cloudflare có thể xử lý dữ liệu ngoài quốc gia của bạn. Ứng dụng không hướng đến trẻ em và không yêu cầu tên hoặc thông tin liên hệ của trẻ.
+Google và Cloudflare có thể xử lý dữ liệu ngoài quốc gia của bạn. Ứng dụng không hướng đến trẻ em và không yêu cầu tên hoặc thông tin liên hệ của trẻ.
 
 ## 5. Liên hệ
 

@@ -26,21 +26,21 @@ breadcrumb_label: Posisi saat ini
 
 DDak Labs (“kami”) mengoperasikan Buku Kurir. Kebijakan ini menjelaskan data yang tetap di perangkat, data yang dikirim saat memakai cadangan cloud, serta data yang mungkin diproses layanan analitik dan iklan.
 
-<div class="callout"><strong>Ringkasan</strong><br>Catatan disimpan di perangkat. Aplikasi membuat ID cadangan untuk pemulihan dan menginisialisasi cadangan cloud; cadangan berikutnya diperbarui saat Anda memilih Cadangkan. Firebase Analytics hanya mencatat beberapa peristiwa fitur tanpa nominal atau catatan. Google AdMob menampilkan iklan sesuai pilihan persetujuan yang tersedia di wilayah Anda.</div>
+<div class="callout"><strong>Ringkasan</strong><br>Catatan hanya disimpan di perangkat sampai Anda memilih cadangan cloud. Aplikasi menggunakan layanan Google untuk analitik penggunaan dasar dan iklan.</div>
 
 ## 1. Data yang diproses
 
-Aplikasi menyimpan tanggal, negara dan mata uang, jenis pemasukan/pengeluaran, platform atau kategori, nominal, label opsional, jumlah pengantaran, jarak, waktu kerja, target, perkiraan tarif pajak, nominal cepat, tampilan, bahasa, dan status cadangan di SQLite perangkat. File JSON dapat memuat data yang sama; DDak Labs tidak menerimanya kecuali Anda membagikannya.
+Catatan pemasukan dan pengeluaran, informasi pekerjaan, target, dan pengaturan aplikasi disimpan di perangkat. File cadangan yang diekspor dapat memuat data yang sama. DDak Labs tidak menerima catatan kecuali Anda memilih cadangan cloud atau mengirim file.
 
-Pada penggunaan pertama, aplikasi membuat ID cadangan acak dan mengirim permintaan awal ke layanan cadangan. Cadangan cloud dapat memuat catatan dan pengaturan di atas, ID dan waktu cadangan, serta ringkasan angka. Nama, email, nomor telepon, kontak, dan lokasi presisi tidak disertakan. Orang yang mengetahui ID cadangan mungkin dapat memulihkan data, jadi jangan mempublikasikannya.
+Tidak ada ID cadangan yang dibuat saat penyiapan awal. Ketika Anda menekan cadangan cloud untuk pertama kali, aplikasi membuat ID unik dan mengirim catatan, pengaturan, waktu, serta informasi ringkasan ke layanan cadangan untuk pemulihan nanti. Jangan publikasikan ID yang diperlukan untuk pemulihan.
 
-Firebase Analytics dapat memproses peluncuran aplikasi, apakah catatan dibuat/diperbarui atau cadangan dijalankan, informasi perangkat dan aplikasi, perkiraan wilayah, pengenal layanan, dan diagnostik. Peristiwa analitik tidak memuat nominal, nama platform, label khusus, tanggal, jarak, atau waktu kerja.
+Firebase Analytics dapat memproses penggunaan aplikasi dasar, informasi perangkat/aplikasi, perkiraan wilayah, pengenal, dan diagnostik untuk meningkatkan layanan. Isi catatan seperti nominal dan label khusus tidak dimasukkan ke peristiwa analitik.
 
-Google AdMob dapat memproses pengenal iklan, alamat IP, perkiraan lokasi, informasi perangkat/aplikasi, permintaan, tayangan, interaksi, dan diagnostik iklan. Aplikasi meminta iklan yang tidak dipersonalisasi dan menampilkan formulir persetujuan Google sebelum meminta iklan bila diwajibkan. Jika menghubungi dukungan, kami dan Gmail dapat memproses alamat email, pesan, serta lampiran yang Anda pilih.
+Google AdMob dapat memproses informasi perangkat, iklan, jaringan, interaksi, perkiraan wilayah, dan diagnostik untuk menampilkan dan mengukur iklan serta mencegah penyalahgunaan. Aplikasi meminta iklan yang tidak dipersonalisasi dan menyediakan pilihan privasi iklan sebelum meminta iklan bila diwajibkan. Jika menghubungi dukungan, kami dan Gmail dapat memproses alamat email, pesan, serta lampiran yang Anda pilih.
 
 ## 2. Layanan eksternal
 
-- DDak Labs pada Cloudflare Workers dan D1: cadangan dan pemulihan dengan ID cadangan
+- Layanan cadangan DDak Labs menggunakan Cloudflare: cadangan dan pemulihan yang dipilih pengguna
 - Google Firebase Analytics: analisis penggunaan agregat dan keandalan
 - Google AdMob dan User Messaging Platform: iklan, persetujuan, pengukuran, dan pencegahan penipuan
 - Google Gmail: korespondensi dukungan
@@ -49,11 +49,11 @@ Lihat [Kebijakan Privasi Google](https://policies.google.com/privacy) dan [Kebij
 
 ## 3. Penyimpanan, penghapusan, dan pilihan
 
-Data lokal tetap ada sampai Anda menghapus catatan, menghapus data aplikasi, atau mencopot aplikasi. File cadangan tetap di lokasi penyimpanan atau berbagi. Cadangan cloud tersedia untuk pemulihan sampai ditimpa atau dihapus DDak Labs; untuk meminta penghapusan, kirim email beserta ID cadangan. Google menyimpan data sesuai pengaturan dan kebijakan layanannya.
+Data lokal tetap ada sampai Anda menghapus catatan, menghapus data aplikasi, atau mencopot aplikasi. File cadangan tetap di lokasi penyimpanan atau berbagi. Cadangan cloud tersedia untuk pemulihan sampai ditimpa atau dihapus DDak Labs. Penghapusan cadangan cloud hanya diproses melalui permintaan email yang menyertakan ID cadangan. Google menyimpan data sesuai pengaturan dan kebijakan layanannya.
 
 ## 4. Keamanan, pemrosesan internasional, dan anak
 
-Permintaan jaringan menggunakan HTTPS. ID cadangan adalah kredensial pemulihan dan tidak boleh dipublikasikan. Google dan Cloudflare dapat memproses data di luar negara Anda. Aplikasi ini tidak ditujukan untuk anak dan tidak meminta nama atau informasi kontak anak.
+Google dan Cloudflare dapat memproses data di luar negara Anda. Aplikasi ini tidak ditujukan untuk anak dan tidak meminta nama atau informasi kontak anak.
 
 ## 5. Kontak
 

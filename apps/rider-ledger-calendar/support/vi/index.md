@@ -38,7 +38,7 @@ Kiểm tra quốc gia, tiền tệ, loại thu/chi và ngày, rồi sửa bản 
 
 ### Sao lưu và khôi phục hoạt động thế nào?
 
-Dữ liệu được lưu trên điện thoại trước. Hãy giữ kín và ghi lại mã sao lưu. Chọn Sao lưu đám mây để cập nhật bản có thể khôi phục. Khôi phục sẽ thay sổ hiện tại bằng bản sao lưu; nếu cần cả hai phiên bản, hãy xuất tệp JSON trước. DDak Labs không thể tìm lại mã sao lưu mà bạn đã quên.
+Dữ liệu được lưu trên điện thoại trước. Lần đầu chọn Sao lưu đám mây, ứng dụng tạo một mã duy nhất và tải lên bản có thể khôi phục. Sau khi sao lưu thành công, hãy giữ kín và ghi lại mã được hiển thị. Khôi phục sẽ thay sổ hiện tại bằng bản sao lưu; nếu cần cả hai phiên bản, hãy xuất tệp JSON trước. DDak Labs không thể tìm lại mã mà bạn đã quên.
 
 ### Không thấy lựa chọn quyền riêng tư quảng cáo
 
@@ -47,6 +47,10 @@ Mục này chỉ xuất hiện tại khu vực Google yêu cầu. Nếu không c
 ### Báo lỗi bản dịch
 
 Chọn **Cài đặt → Báo lỗi bản dịch**. Bạn có thể xóa thông tin không muốn gửi trước khi gửi email.
+
+### Yêu cầu xóa bản sao lưu đám mây
+
+Không thể xóa bản sao lưu đám mây trong ứng dụng. Gửi yêu cầu kèm mã sao lưu đến [ddaklabs@gmail.com](mailto:ddaklabs@gmail.com?subject=%5BS%E1%BB%95%20Shipper%5D%20X%C3%B3a%20b%E1%BA%A3n%20sao%20l%C6%B0u%20%C4%91%C3%A1m%20m%C3%A2y). DDak Labs có thể hỏi thêm thông tin cần thiết để xác minh yêu cầu trước khi xóa.
 
 ## Khắc phục cơ bản
 
