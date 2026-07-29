@@ -14,7 +14,7 @@ document_type: privacy
 document_label: "隐私"
 support_url: /apps/fridge-manager/support/zh-hans/
 privacy_url: /apps/fridge-manager/privacy/zh-hans/
-updated_at: 2026-07-20
+updated_at: 2026-07-29
 page_class: fridge-app
 alternates:
   - locale: en
