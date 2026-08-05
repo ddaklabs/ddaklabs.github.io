@@ -14,6 +14,22 @@
     support: /apps/lotto-check/support/
     privacy: /apps/lotto-check/privacy/
 
+- slug: pokedex
+  name: 띠부띠부씰 앨범
+  summary: 여러 띠부띠부씰 도감의 수집 현황 관리
+  icon: /assets/images/pokedex-icon.png
+  platforms:
+    - iOS
+    - Android
+  locales:
+    - code: ko-KR
+      path: ko-kr
+      label: 한국어
+  links:
+    overview: /apps/pokedex/
+    support: /apps/pokedex/support/
+    privacy: /apps/pokedex/privacy/
+
 - slug: fridge-manager
   name: FridgeTick · 냉장고 관리
   summary: 냉장·냉동·실온 식품과 유통기한 관리
