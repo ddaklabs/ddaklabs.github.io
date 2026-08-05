@@ -7,6 +7,7 @@ locale_label: 한국어
 language_gateway_url: /apps/pokedex/privacy/
 permalink: /apps/pokedex/privacy/ko-kr/
 app_name: 띠부띠부씰 앨범
+app_url: /apps/pokedex/
 app_icon: /assets/images/pokedex-icon.png
 document_type: privacy
 document_label: 개인정보처리방침
