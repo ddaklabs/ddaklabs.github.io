@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 바다날씨
-description: 국내 바다 장소의 날씨와 물때를 한눈에 확인하는 바다날씨 앱의 공식 안내입니다.
+title: 바다물때
+description: 국내 바다 장소의 물때와 날씨를 한눈에 확인하는 바다물때 앱의 공식 안내입니다.
 locale: ko-KR
 permalink: /apps/sea-weather/
 ---
@@ -10,7 +10,7 @@ permalink: /apps/sea-weather/
   <div class="site-shell app-hero-inner">
     <div>
       <p class="eyebrow">iOS · Android</p>
-      <h1>바다날씨</h1>
+      <h1>바다물때</h1>
       <p>저장한 국내 바다 장소의 현재 날씨, 시간별 예보, 바람·파고와 만조·간조 흐름을 빠르게 확인하는 앱입니다.</p>
     </div>
   </div>
@@ -33,7 +33,7 @@ permalink: /apps/sea-weather/
       </a>
     </div>
     <div class="notice">
-      바다날씨의 예보와 물때 정보는 참고용입니다. 실제 현장 상황과 다를 수 있으므로 기상특보와 현지 안전 안내를 함께 확인하세요.
+      바다물때의 예보와 물때 정보는 참고용입니다. 실제 현장 상황과 다를 수 있으므로 기상특보와 현지 안전 안내를 함께 확인하세요.
     </div>
   </div>
 </section>

@@ -1,12 +1,12 @@
 ---
 layout: document
 title: 개인정보처리방침
-description: 바다날씨 앱의 로컬 저장, 날씨 데이터 요청과 Google AdMob 이용 내용을 안내합니다.
+description: 바다물때 앱의 로컬 저장, 날씨 데이터 요청과 Google AdMob 이용 내용을 안내합니다.
 locale: ko-KR
 locale_label: 한국어
 language_gateway_url: /apps/sea-weather/privacy/
 permalink: /apps/sea-weather/privacy/ko-kr/
-app_name: 바다날씨
+app_name: 바다물때
 app_url: /apps/sea-weather/
 app_icon: /assets/images/site-icon.svg
 document_type: privacy
@@ -16,7 +16,7 @@ privacy_url: /apps/sea-weather/privacy/ko-kr/
 updated_at: 2026년 8월 31일
 ---
 
-DDak Labs(이하 “운영자”)는 바다날씨(이하 “앱”) 이용자의 개인정보를 중요하게 생각합니다. 이 방침은 앱에서 어떤 정보가 기기에 저장되고, 날씨·물때 조회와 광고 제공 과정에서 어떤 정보가 외부 서비스에서 처리될 수 있는지 설명합니다.
+DDak Labs(이하 “운영자”)는 바다물때(이하 “앱”) 이용자의 개인정보를 중요하게 생각합니다. 이 방침은 앱에서 어떤 정보가 기기에 저장되고, 날씨·물때 조회와 광고 제공 과정에서 어떤 정보가 외부 서비스에서 처리될 수 있는지 설명합니다.
 
 <div class="callout">
   <strong>핵심 안내</strong><br>
@@ -110,7 +110,7 @@ Google, Cloudflare, MET Norway와 Gmail은 대한민국 외 지역의 서버에�
 ## 9. 개인정보 보호 문의
 
 - 운영자: DDak Labs
-- 개인정보 보호 문의: [ddaklabs@gmail.com](mailto:ddaklabs@gmail.com?subject=%5B%EB%B0%94%EB%8B%A4%EB%82%A0%EC%94%A8%5D%20%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EB%AC%B8%EC%9D%98)
+- 개인정보 보호 문의: [ddaklabs@gmail.com](mailto:ddaklabs@gmail.com?subject=%5B%EB%B0%94%EB%8B%A4%EB%AC%BC%EB%95%8C%5D%20%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EB%AC%B8%EC%9D%98)
 
 ## 10. 방침 변경
 

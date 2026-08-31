@@ -1,12 +1,12 @@
 ---
 layout: document
 title: 고객지원
-description: 바다날씨 앱의 장소 검색, 데이터 갱신과 문제 해결 방법을 안내합니다.
+description: 바다물때 앱의 장소 검색, 데이터 갱신과 문제 해결 방법을 안내합니다.
 locale: ko-KR
 locale_label: 한국어
 language_gateway_url: /apps/sea-weather/support/
 permalink: /apps/sea-weather/support/ko-kr/
-app_name: 바다날씨
+app_name: 바다물때
 app_url: /apps/sea-weather/
 app_icon: /assets/images/site-icon.svg
 document_type: support
@@ -16,13 +16,13 @@ privacy_url: /apps/sea-weather/privacy/ko-kr/
 updated_at: 2026년 8월 31일
 ---
 
-바다날씨를 이용해 주셔서 감사합니다. 아래에서 자주 발생하는 문제와 해결 방법을 확인할 수 있습니다.
+바다물때를 이용해 주셔서 감사합니다. 아래에서 자주 발생하는 문제와 해결 방법을 확인할 수 있습니다.
 
 ## 자주 묻는 질문
 
 ### 장소가 검색되지 않아요
 
-- 바다날씨는 국내 해안·항구·섬·해수욕장 중심의 장소 목록을 제공합니다. 내륙 행정동은 검색되지 않을 수 있습니다.
+- 바다물때는 국내 해안·항구·섬·해수욕장 중심의 장소 목록을 제공합니다. 내륙 행정동은 검색되지 않을 수 있습니다.
 - 지명 전체 또는 핵심 단어만 입력해 다시 검색해 주세요.
 - 목록에는 있지만 실시간 물때 연결이 준비되지 않은 지점은 안내 문구가 표시될 수 있습니다.
 
@@ -54,10 +54,10 @@ updated_at: 2026년 8월 31일
 
 <div class="contact-panel">
   <h2>문의하기</h2>
-  <p><strong>이메일</strong><br><a href="mailto:ddaklabs@gmail.com?subject=%5B%EB%B0%94%EB%8B%A4%EB%82%A0%EC%94%A8%5D%20%EB%AC%B8%EC%9D%98">ddaklabs@gmail.com</a></p>
+  <p><strong>이메일</strong><br><a href="mailto:ddaklabs@gmail.com?subject=%5B%EB%B0%94%EB%8B%A4%EB%AC%BC%EB%95%8C%5D%20%EB%AC%B8%EC%9D%98">ddaklabs@gmail.com</a></p>
   <p>문의에는 휴대전화 기종, OS·앱 버전, 선택한 장소, 문제 발생 시각과 재현 순서를 포함해 주세요. 불필요한 개인정보는 보내지 마세요.</p>
 </div>
 
 ## 서비스 안내
 
-바다날씨는 날씨와 물때 정보를 편리하게 확인하기 위한 참고 도구입니다. 실제 현장 상황과 다를 수 있으며 출항, 해루질, 낚시, 갯벌 체험의 안전을 보장하지 않습니다.
+바다물때는 날씨와 물때 정보를 편리하게 확인하기 위한 참고 도구입니다. 실제 현장 상황과 다를 수 있으며 출항, 해루질, 낚시, 갯벌 체험의 안전을 보장하지 않습니다.
