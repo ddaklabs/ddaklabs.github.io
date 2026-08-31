@@ -130,3 +130,19 @@
     overview: /apps/rider-ledger-calendar/
     support: /apps/rider-ledger-calendar/support/
     privacy: /apps/rider-ledger-calendar/privacy/
+
+- slug: sea-weather
+  name: 바다날씨
+  summary: 국내 바다 장소의 날씨와 물때를 한눈에 확인
+  icon: /assets/images/site-icon.svg
+  platforms:
+    - iOS
+    - Android
+  locales:
+    - code: ko-KR
+      path: ko-kr
+      label: 한국어
+  links:
+    overview: /apps/sea-weather/
+    support: /apps/sea-weather/support/
+    privacy: /apps/sea-weather/privacy/
