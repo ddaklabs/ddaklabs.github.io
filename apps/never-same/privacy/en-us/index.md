@@ -12,7 +12,7 @@ document_type: privacy
 document_label: Privacy Policy
 support_url: /apps/never-same/support/en-us/
 privacy_url: /apps/never-same/privacy/en-us/
-updated_at: August 21, 2026
+updated_at: September 5, 2026
 ---
 
 DDak Labs (the “Operator”) respects the privacy of people who use NeverSame (the “App”). This policy explains what stays on your device and what may be processed by external services.
@@ -35,7 +35,7 @@ This information is stored in local files and a local SQLite database. The Opera
 
 ### 1.2 Camera, photo library and location
 
-The App requests camera access to take photos and photo-library access when you choose to import an image. Selected and captured images are processed on the device. Location access is optional and is used while the App is in use to create place and optional weather information for a new capture. Address conversion uses the operating system's native geocoder.
+The App requests camera access to take photos and photo-library access when you choose to import an image. By default, captured originals remain only in the App's local storage. If you enable “NeverSame + Photos,” the App also copies new camera originals to a dedicated NeverSame album in the device photo library. On iOS, creating and reusing that album requires Photos access; NeverSame does not use this option to import or scan existing photos. Existing records and imported images are not copied by this option. Selected and captured images are processed on the device. Location access is optional and is used while the App is in use to create place and optional weather information for a new capture. Address conversion uses the operating system's native geocoder.
 
 If automatic weather is enabled, latitude and longitude are rounded to two decimal places and sent over HTTPS to the DDak Labs weather gateway. The gateway retrieves current weather from MET Norway and uses a short shared cache. It does not intentionally retain coordinates or build a location history. Imported older photos do not use your current location or current weather.
 
@@ -50,7 +50,7 @@ The App uses Google Analytics for Firebase and Google AdMob. Google may process:
 
 Analytics events are not allowed to contain photo data or file paths, project names, notes, place text, latitude or longitude. Ad requests are configured as non-personalized. The App does not request App Tracking Transparency permission on iOS and links Firebase Analytics without advertising-ID support on iOS.
 
-Banner ads may be displayed in the App. An interstitial may be shown after a photo is successfully saved, excluding a project's first photo, with a limit of one successful display per rolling 24 hours.
+Non-personalized banner ads may be displayed at the bottom of the main project screen. Ads are not shown over the camera, photo saving, photo viewer, comparison, or playback experience. The initial release does not use interstitial ads.
 
 ### 1.4 Support email
 
@@ -104,5 +104,5 @@ External communications use HTTPS. Google, Cloudflare, Apple and MET Norway may 
 
 This policy may be updated when the App, law or external services change. Material changes will be announced in the App or on this page.
 
-- Published: August 21, 2026
-- Effective: August 21, 2026
+- Published: September 5, 2026
+- Effective: September 5, 2026
