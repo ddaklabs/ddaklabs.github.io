@@ -19,4 +19,8 @@ available_locales:
     languages: [ja]
     label: 日本語
     url: /apps/nemoji/privacy/ja-jp/
+  - code: zh-TW
+    languages: [zh-Hant, zh-TW, zh-HK, zh-MO]
+    label: 繁體中文
+    url: /apps/nemoji/privacy/zh-tw/
 ---
