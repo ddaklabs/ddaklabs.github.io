@@ -12,7 +12,7 @@ document_type: privacy
 document_label: 隱私權政策
 support_url: /apps/nemoji/support/
 privacy_url: /apps/nemoji/privacy/zh-tw/
-updated_at: 2026-09-09
+updated_at: 2026-09-10
 updated_label: 更新日期
 support_nav_label: 支援
 privacy_nav_label: 隱私權政策
@@ -39,6 +39,18 @@ App 使用 Google AdMob 及 Google 的同意管理功能。Google 與參與廣�
 - [Google 如何使用採用其服務的 App 資訊](https://policies.google.com/technologies/partner-sites)
 - [Google 廣告設定](https://adssettings.google.com/)
 
+## 可選擇的Meta廣告成效衡量
+在支援的版本中，主動開啟「廣告成效衡量」後，App會透過Meta SDK傳送安裝、App啟用與開啟、首次儲存文章及完成儲存作品圖片的訊號。此選項預設關閉，iOS還需要另行允許追蹤。這與Google廣告同意分開處理；目前在需要同意的地區不提供此衡量功能。
+
+接收方為Meta及其隱私權政策所列相關法人，目的是了解廣告帶來的使用者與後續App使用結果。除了事件名稱與時間，SDK可能處理App識別碼和版本、SDK產生的識別碼、裝置、作業系統、語言、時區、螢幕等技術資訊，以及通訊時的IP位址。購買事件自動記錄及廣告識別碼（IDFA、Android廣告ID）收集均已停用。你的文章、標題、署名、圖片及選用的靈感不會包含在此衡量中。
+
+你可以隨時在設定中關閉，仍可使用寫作、字型與圖片儲存功能。關閉會停止App發送新的衡量資料，但無法撤回已傳送或傳送中的請求，也不會自動刪除Meta持有的資料。移除App不會刪除已傳送給Meta的資料。
+
+Meta可能依其政策在境外處理資料。保存期限、刪除與權利行使程序依其政策及處理目的而異，營運者不另行保證Meta的保存期限。請透過下方NEMOJI聯絡信箱，或Meta政策中的權利行使程序提出詢問。
+
+- [Meta隱私權政策與權利行使](https://www.facebook.com/privacy/policy/)
+- [Meta商業工具使用條款](https://www.facebook.com/legal/technology_terms)
+
 ## 圖片儲存、分享與權限
 
 選擇儲存時，作品圖片會加入照片圖庫。App 可能依作業系統要求照片儲存權限。開啟靈感提醒時會要求通知權限，可在系統設定中關閉。選擇分享或複製時，文字或圖片會交給系統分享功能或剪貼簿。之後由你選用的外部 App 依其政策處理。
@@ -53,6 +65,6 @@ App 使用 Google AdMob 及 Google 的同意管理功能。Google 與參與廣�
 
 營運者：DDak Labs / NEMOJI  
 NEMOJI 聯絡信箱：[ezkoon@gmail.com](mailto:ezkoon@gmail.com)  
-公布及生效日期：2026 年 9 月 9 日
+公布及生效日期：2026 年 9 月 10 日
 
 相關功能或服務變更時，我們會更新本頁並標示適用日期。

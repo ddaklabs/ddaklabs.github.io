@@ -12,7 +12,7 @@ document_type: privacy
 document_label: Privacy Policy
 support_url: /apps/nemoji/support/
 privacy_url: /apps/nemoji/privacy/en-us/
-updated_at: 2026-09-09
+updated_at: 2026-09-10
 support_nav_label: Support
 privacy_nav_label: Privacy Policy
 ---
@@ -33,6 +33,18 @@ External providers may process data outside your country, including in the Unite
 - [How Google uses information from apps](https://policies.google.com/technologies/partner-sites)
 - [Google ad settings](https://adssettings.google.com/)
 
+## Optional Meta advertising measurement
+On supported versions, enabling “Ad effectiveness measurement” allows the app to use the Meta SDK to send installation/app activation, app-open, first writing-save and completed artwork-image-save signals. This option is off by default. iOS additionally requires tracking permission. It is separate from Google advertising consent; measurement is currently unavailable in regions where consent is required.
+
+The recipients are Meta and the relevant entities identified in its privacy policy. The purpose is to understand advertising acquisition and subsequent app use. In addition to event names and times, the SDK may process the app identifier/version, an SDK-generated identifier, device/OS/language/time-zone/display information and the IP address involved in network communication. Automatic purchase events and advertising-ID collection (IDFA/Android advertising ID) are disabled. Your writing, titles, signatures, images and selected prompts are not included in this measurement.
+
+You can turn measurement off in Settings without losing writing, fonts or image saving. Turning it off stops new measurement dispatches by the app; it does not recall requests already sent or in flight, or automatically delete information held by Meta. Uninstalling the app does not delete information already sent to Meta.
+
+Meta may process information outside your country under its own policies. Retention periods and deletion/rights procedures depend on those policies and the processing purpose; the app operator does not guarantee a separate Meta retention period. Contact NEMOJI below or use the rights procedures in Meta's privacy policy.
+
+- [Meta Privacy Policy and privacy rights](https://www.facebook.com/privacy/policy/)
+- [Meta Business Tools Terms](https://www.facebook.com/legal/technology_terms)
+
 ## Saving, sharing and permissions
 Choosing Save adds an artwork image to your photo library. Photo saving permission may be requested depending on the OS. Notifications are requested when enabling reminders and can be disabled in system settings. Choosing Share or Copy sends the selected text or image to the OS share interface or clipboard. Any app you choose then handles the information under its own policy.
 
@@ -44,6 +56,6 @@ Contact us below for access, correction, deletion, restriction or consent withdr
 ## Contact and changes
 Operator: DDak Labs / NEMOJI  
 NEMOJI contact: [ezkoon@gmail.com](mailto:ezkoon@gmail.com)  
-Published and effective: September 9, 2026
+Published and effective: September 10, 2026
 
 We update this page and its effective date when relevant app features or services change.
