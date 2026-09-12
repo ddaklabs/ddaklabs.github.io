@@ -12,12 +12,22 @@ document_type: privacy
 document_label: Privacy Policy
 support_url: /apps/nemoji/support/
 privacy_url: /apps/nemoji/privacy/en-us/
-updated_at: 2026-09-10
+updated_at: 2026-09-12
 support_nav_label: Support
 privacy_nav_label: Privacy Policy
 ---
 
 NEMOJI is a manuscript-paper writing app. This policy distinguishes information stored on your device from information processed by external services. Available features and choices depend on your installed app version.
+
+## Optional app usage analytics
+On supported versions, turning on “App usage analytics” in Settings enables Google Firebase Analytics to process app-use events such as app opens, engagement time and successful writing or artwork-image saves. This option is off by default and separate from advertising measurement. Declining does not restrict app features, and you can turn it off at any time.
+
+The service may process app/SDK-generated identifiers, app version, device/OS/language information and the IP address used in network communication. Custom events contain only a fixed app label and predefined action types. Your writing, titles, signatures, images and selected prompts are not sent. Firebase advertising-ID and IDFV collection are disabled, and consent for advertising storage, advertising user data and ad personalization is denied. Existing AdMob processing is described separately in the advertising section.
+
+Turning this option off stops new analytics collection. It cannot recall information already sent or in flight; uninstalling the app does not delete information already sent to Google. Google may process information outside your country, including in the United States. Retention and deletion follow Analytics settings and Google's policies. Contact us below for privacy-rights or deletion requests.
+
+- [Firebase privacy and security](https://firebase.google.com/support/privacy)
+
 
 ## On-device information
 No account is required. Your writing, titles, signatures, dates, chosen prompts, font and paper settings, and drafts are stored on your device. Prompt replacement counts, reminder times, ad display times and consent choices may also be stored locally. The app does not send your writing to an operator server or advertising provider. Prompt reminders are scheduled locally on your device.
@@ -56,6 +66,6 @@ Contact us below for access, correction, deletion, restriction or consent withdr
 ## Contact and changes
 Operator: DDak Labs / NEMOJI  
 NEMOJI contact: [ezkoon@gmail.com](mailto:ezkoon@gmail.com)  
-Published and effective: September 10, 2026
+Published and effective: September 12, 2026
 
 We update this page and its effective date when relevant app features or services change.

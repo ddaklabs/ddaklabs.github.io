@@ -12,7 +12,7 @@ document_type: privacy
 document_label: 隱私權政策
 support_url: /apps/nemoji/support/
 privacy_url: /apps/nemoji/privacy/zh-tw/
-updated_at: 2026-09-10
+updated_at: 2026-09-12
 updated_label: 更新日期
 support_nav_label: 支援
 privacy_nav_label: 隱私權政策
@@ -22,6 +22,16 @@ change_language_label: 變更文件語言
 ---
 
 NEMOJI 是一款在稿紙上寫作的 App。本政策說明保存在裝置上的資料，以及外部服務可能處理的資料。功能與選項可能因安裝版本而異。
+
+## 自願選用的 App 使用分析
+支援此功能的版本中，在設定開啟「App 使用分析」後，Google Firebase Analytics 會處理 App 開啟、使用時間、文章與作品圖片儲存完成等使用事件。此選項預設關閉，與廣告成效衡量分開選擇。拒絕不影響 App 功能，也可隨時在設定中關閉。
+
+服務可能處理 App 或 SDK 產生的識別碼、App 版本、裝置、作業系統與語言資訊，以及連線時的 IP 位址。自訂事件僅包含固定的 App 標籤與預先定義的操作類型，不會傳送內文、標題、署名、圖片或所選靈感。Firebase 的廣告識別碼與 IDFV 收集已停用；廣告儲存、廣告使用者資料與個人化廣告同意均設為拒絕。AdMob 的資訊處理另見廣告說明。
+
+關閉後會停止新的分析收集，但無法撤回已傳送或傳送中的資訊。解除安裝不會自動刪除已傳送給 Google 的資訊。Google 可能在美國等居住地以外的國家處理資訊，保存與刪除依 Analytics 設定及 Google 政策辦理。如需行使隱私權利或要求刪除，請使用下方聯絡方式。
+
+- [Firebase 隱私權與安全性](https://firebase.google.com/support/privacy)
+
 
 ## 保存在裝置上的資料
 
