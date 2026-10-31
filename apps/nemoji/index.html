@@ -1,0 +1,90 @@
+---
+layout: null
+permalink: /apps/nemoji/
+---
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#fcfcf9">
+  <title>네모지 — 마음을 담는 원고지</title>
+  <meta name="description" content="한 줄의 마음도, 한 편의 시도. 원고지에 쓰고 이미지로 간직하는 네모지. iPhone과 Android에서 만나보세요.">
+  <link rel="canonical" href="https://ddaklabs.github.io/apps/nemoji/">
+  <link rel="icon" href="/assets/images/nemoji-icon.png" type="image/png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="네모지 — 마음을 담는 원고지">
+  <meta property="og:description" content="그냥 흘려보내기 아쉬운 문장들. 원고지에 쓰고, 이미지로 간직해요.">
+  <meta property="og:url" content="https://ddaklabs.github.io/apps/nemoji/">
+  <meta property="og:image" content="https://ddaklabs.github.io/apps/nemoji/assets/manuscript.png">
+  <meta property="og:image:alt" content="네모지 앱으로 저장한 가을 원고지">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    :root{--paper:#fcfcf9;--ink:#243b31;--muted:#6b736d;--line:#e3e6df;--accent:#f75c70;--soft:#edf1eb}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit}button,select,a{-webkit-tap-highlight-color:transparent}a:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:5px}::selection{background:#ffe1e4}
+    .shell{width:min(1100px,calc(100% - 64px));margin:auto}.skip{position:absolute;top:-80px;left:20px;background:white;padding:12px;z-index:5}.skip:focus{top:12px}
+    header{height:104px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-size:21px;font-weight:650;letter-spacing:-.7px}.brand img{width:42px;height:42px;border:1px solid #ecece7;border-radius:10px}.locale{position:relative;display:flex;align-items:center;gap:8px;color:var(--muted)}.locale svg{width:17px;height:17px}.locale select{border:0;background:transparent;color:var(--ink);font:inherit;font-size:13px;padding:10px 4px;cursor:pointer;min-height:44px}
+    main{padding:82px 0 66px}.hero{display:grid;grid-template-columns:1fr 1.03fr;align-items:center;gap:65px}.eyebrow{font-size:12px;letter-spacing:2.1px;font-weight:650;margin:0 0 25px;color:#7c877f}.eyebrow:before{content:"";display:inline-block;width:24px;height:1px;background:var(--accent);vertical-align:middle;margin-right:12px}h1{font-size:clamp(40px,5.2vw,66px);line-height:1.25;letter-spacing:-2.8px;font-weight:600;margin:0 0 25px;word-break:keep-all}.subtitle{font-size:17px;line-height:1.95;letter-spacing:-.3px;color:var(--muted);margin:0 0 32px;word-break:keep-all}.downloads{display:flex;gap:10px;flex-wrap:wrap}.store{display:flex;align-items:center;justify-content:center;gap:11px;padding:14px 18px;min-height:65px;border-radius:12px;text-decoration:none;transition:transform .15s,background .15s;flex:1;min-width:170px}.store:hover{transform:translateY(-2px)}.store.apple{background:var(--ink);color:white}.store.google{background:transparent;border:1px solid #c6cfc5}.store.google:hover{background:var(--soft)}.store svg{width:22px;height:26px;flex:none}.store-copy{display:grid;gap:3px}.store-copy small{font-size:10px;letter-spacing:.5px;opacity:.73}.store-copy strong{font-weight:600;font-size:15px;white-space:nowrap;letter-spacing:-.3px}.free{font-size:12px;margin:15px 0 0;color:#7d847d}
+    .preview{position:relative;padding:35px 24px 27px;background:#f0f2ed;border-radius:2px}.preview:before{content:"";position:absolute;inset:14px;border:1px solid #dfe4dc;pointer-events:none}.sample{position:relative;background:white;box-shadow:0 10px 30px #223b3110;transform:rotate(-2deg)}.sample img{display:block;width:100%;height:auto}.caption{text-align:center;margin:22px 0 0;font-size:11px;letter-spacing:1px;color:#6e786e}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:85px;padding-top:30px;border-top:1px solid var(--line)}.feature b{display:block;font-size:15px;font-weight:600;margin-bottom:8px;letter-spacing:-.2px}.feature p{margin:0;font-size:13px;line-height:1.8;color:var(--muted);word-break:keep-all}.feature span{font-size:11px;color:var(--accent);margin-right:8px;font-variant-numeric:tabular-nums}
+    footer{display:flex;justify-content:space-between;gap:20px;padding:26px 0 30px;border-top:1px solid var(--line);color:#7d847d;font-size:11px}footer p{margin:0}footer nav{display:flex;gap:18px}footer a{text-decoration:none}footer a:hover{text-decoration:underline}
+    @media(max-width:850px){.hero{gap:35px}.store{min-width:150px;padding:13px 11px}h1{font-size:46px;letter-spacing:-2px}.preview{padding:28px 19px 23px}}
+    @media(max-width:650px){.shell{width:calc(100% - 40px)}header{height:76px}.brand{font-size:19px;gap:9px}.brand img{width:35px;height:35px;border-radius:8px}main{padding:40px 0 35px}.hero{display:flex;flex-direction:column;align-items:stretch;gap:36px}.eyebrow{font-size:10px;margin-bottom:17px;letter-spacing:1.7px}h1{font-size:43px;letter-spacing:-1.8px;margin-bottom:18px;line-height:1.22}.subtitle{font-size:15px;line-height:1.85;margin-bottom:25px}.downloads{flex-wrap:nowrap;gap:9px}.store{min-width:0;padding:13px 10px;min-height:62px;gap:8px}.store-copy strong{font-size:13px}.store-copy small{font-size:9px}.store svg{width:20px;height:23px}.free{font-size:11px;margin-top:12px}.preview{padding:26px 23px 20px;margin:0 2px}.preview:before{inset:11px}.caption{font-size:10px;margin-top:20px}.features{margin-top:35px;padding-top:26px;gap:20px;grid-template-columns:1fr}.feature b{font-size:14px;margin-bottom:4px}.feature p{font-size:12px;padding-left:24px}footer{flex-direction:column;gap:15px;padding:23px 0 27px;font-size:10px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.store{transition:none}.store:hover{transform:none}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main" data-text="skip">본문으로 바로가기</a>
+  <div class="shell">
+    <header>
+      <a class="brand" href="/apps/nemoji/" aria-label="네모지 홈"><img src="/assets/images/nemoji-icon.png" width="42" height="42" alt=""><span data-text="brand">네모지</span></a>
+      <label class="locale"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 5 5 13 0 18M12 3c-5 5-5 13 0 18"/></svg><select id="language" aria-label="언어 / Language"><option value="ko">한국어</option><option value="en">English</option><option value="ja">日本語</option><option value="zh-Hant">繁體中文</option></select></label>
+    </header>
+    <main id="main">
+      <div class="hero">
+        <section class="intro" aria-labelledby="headline">
+          <p class="eyebrow" data-text="eyebrow">A LITTLE SPACE FOR YOUR WORDS</p>
+          <h1 id="headline"><span data-text="headline1">한 칸씩,</span><br><span data-text="headline2">마음을 남겨.</span></h1>
+          <p class="subtitle"><span data-text="intro1">그냥 흘려보내기 아쉬운 문장들.</span><br><span data-text="intro2">원고지에 쓰고, 이미지로 간직해요.</span></p>
+          <div class="downloads" aria-label="앱 다운로드">
+            <a class="store apple" id="ios-download" href="https://apps.apple.com/kr/app/id6445940854">
+              <svg aria-hidden="true" viewBox="0 0 24 28" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="1.5" width="14" height="25" rx="3"/><path d="M10 5h4M10 23h4"/></svg>
+              <span class="store-copy"><small>APP STORE</small><strong data-text="ios">iPhone 다운로드</strong></span>
+            </a>
+            <a class="store google" id="android-download" href="https://play.google.com/store/apps/details?id=com.ezkookn.nemoji">
+              <svg aria-hidden="true" viewBox="0 0 25 28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m3 2 20 12L3 26Z" stroke-linejoin="round"/><path d="m3 2 13 16M3 26 16 10"/></svg>
+              <span class="store-copy"><small>GOOGLE PLAY</small><strong data-text="android">Android 다운로드</strong></span>
+            </a>
+          </div>
+          <p class="free" data-text="free">무료로 시작 · 앱 내 광고 포함</p>
+        </section>
+        <figure class="preview" style="margin-top:0;margin-bottom:0;margin-left:0;margin-right:0">
+          <div class="sample"><img src="/apps/nemoji/assets/manuscript.png" width="1080" height="945" alt="네모지에서 쓴 가을 시를 원고지 이미지로 저장한 예시" id="sample-image" fetchpriority="low"></div>
+          <figcaption class="caption" data-text="caption">네모지 앱에서 직접 저장한 한 편</figcaption>
+        </figure>
+      </div>
+      <section class="features" aria-label="네모지에서 할 수 있는 일">
+        <div class="feature"><b><span aria-hidden="true">01</span><em data-text="feature1" style="font-style:normal">한 줄부터, 여러 장까지</em></b><p data-text="detail1">일기, 시, 편지. 글자 수와 원고지 장수 제한 없이 써요.</p></div>
+        <div class="feature"><b><span aria-hidden="true">02</span><em data-text="feature2" style="font-style:normal">내 글에 어울리는 모습</em></b><p data-text="detail2">글꼴과 종이, 가로쓰기와 세로쓰기를 골라요.</p></div>
+        <div class="feature"><b><span aria-hidden="true">03</span><em data-text="feature3" style="font-style:normal">쓰고, 간직하고, 나누고</em></b><p data-text="detail3">원고지나 시집형 이미지로 저장하고 공유해요.</p></div>
+      </section>
+    </main>
+    <footer><p>© 2026 NEMOJI · DDak Labs</p><nav aria-label="도움말"><a href="/apps/nemoji/support/" data-text="support">고객지원</a><a href="/apps/nemoji/privacy/" data-text="privacy">개인정보처리방침</a><a href="mailto:ddaklabs@gmail.com" data-text="contact">문의</a></nav></footer>
+  </div>
+  <script>
+    const copy={
+      ko:{brand:'네모지',headline1:'한 칸씩,',headline2:'마음을 남겨.',intro1:'그냥 흘려보내기 아쉬운 문장들.',intro2:'원고지에 쓰고, 이미지로 간직해요.',ios:'iPhone 다운로드',android:'Android 다운로드',free:'무료로 시작 · 앱 내 광고 포함',caption:'네모지 앱에서 직접 저장한 한 편',feature1:'한 줄부터, 여러 장까지',detail1:'일기, 시, 편지. 글자 수와 원고지 장수 제한 없이 써요.',feature2:'내 글에 어울리는 모습',detail2:'글꼴과 종이, 가로쓰기와 세로쓰기를 골라요.',feature3:'쓰고, 간직하고, 나누고',detail3:'원고지나 시집형 이미지로 저장하고 공유해요.',support:'고객지원',privacy:'개인정보처리방침',contact:'문의',skip:'본문으로 바로가기',title:'네모지 — 마음을 담는 원고지',imageAlt:'네모지에서 쓴 가을 시를 원고지 이미지로 저장한 예시'},
+      en:{brand:'NEMOJI',headline1:'One little square.',headline2:'A little of you.',intro1:'For words you don’t want to let slip away.',intro2:'Write on manuscript paper. Keep it as an image.',ios:'Get for iPhone',android:'Get for Android',free:'Free to download · Contains ads',caption:'Written and exported with NEMOJI',feature1:'A line or many pages',detail1:'Journals, poems, letters. No character or page limits.',feature2:'Make it feel like you',detail2:'Choose a font, paper, and horizontal or vertical writing.',feature3:'Write, keep, share',detail3:'Save and share your writing as manuscript or poetry-style images.',support:'Support',privacy:'Privacy',contact:'Contact',skip:'Skip to content',title:'NEMOJI — A little space for your words',imageAlt:'An autumn poem exported from NEMOJI on manuscript paper'},
+      ja:{brand:'ネモジ',headline1:'ひとマスずつ、',headline2:'心を残そう。',intro1:'そのまま忘れたくない言葉を。',intro2:'原稿用紙に書いて、画像で残そう。',ios:'iPhoneで使う',android:'Androidで使う',free:'無料でダウンロード · 広告あり',caption:'ネモジで書いて、保存した一編',feature1:'ひと言から、何ページでも',detail1:'日記も、詩も、手紙も。文字数やページ数の制限なく書けます。',feature2:'言葉に合うかたちで',detail2:'フォントや用紙、横書き・縦書きを選べます。',feature3:'書いて、残して、届けて',detail3:'原稿用紙や詩集風の画像で保存・共有できます。',support:'サポート',privacy:'プライバシー',contact:'お問い合わせ',skip:'本文へスキップ',title:'ネモジ — 心を残す原稿用紙',imageAlt:'ネモジから原稿用紙の画像で保存した韓国語の秋の詩'},
+      'zh-Hant':{brand:'NEMOJI',headline1:'一格一格，',headline2:'留下心裡的話。',intro1:'有些句子，不想就這樣忘記。',intro2:'寫在稿紙上，存成圖片收藏。',ios:'iPhone 下載',android:'Android 下載',free:'免費下載 · 內含廣告',caption:'用 NEMOJI 寫下並儲存的一篇文字',feature1:'一行，或好幾頁',detail1:'日記、詩、信件，沒有字數與頁數限制。',feature2:'選擇適合文字的樣子',detail2:'挑選字體、稿紙，以及橫式或直式書寫。',feature3:'寫下、收藏、分享',detail3:'將文字存成稿紙或詩集風格的圖片，與他人分享。',support:'使用說明',privacy:'隱私權政策',contact:'聯絡我們',skip:'跳至主要內容',title:'NEMOJI — 留下心裡的話',imageAlt:'使用 NEMOJI 寫下並匯出的韓文秋日詩稿紙圖片'}
+    };
+    const select=document.getElementById('language');
+    function setLanguage(lang){if(!copy[lang])lang='ko';const c=copy[lang];document.documentElement.lang=lang;select.value=lang;document.title=c.title;document.querySelectorAll('[data-text]').forEach(el=>{const key=el.dataset.text;if(c[key])el.textContent=c[key]});document.getElementById('sample-image').alt=c.imageAlt;document.querySelector('.brand').ariaLabel=c.brand;const country={ko:'kr',en:'kr',ja:'jp','zh-Hant':'tw'}[lang];document.getElementById('ios-download').href='https://apps.apple.com/'+country+'/app/id6445940854';}
+    const preferred=new URLSearchParams(location.search).get('lang');
+    const browserLanguage=navigator.language||'ko';
+    setLanguage(preferred||(browserLanguage.startsWith('ja')?'ja':browserLanguage.startsWith('zh')?'zh-Hant':browserLanguage.startsWith('ko')?'ko':'en'));
+    select.addEventListener('change',()=>{setLanguage(select.value);const url=new URL(location.href);url.searchParams.set('lang',select.value);history.replaceState(null,'',url);});
+  </script>
+</body>
+</html>
