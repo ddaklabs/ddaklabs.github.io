@@ -12,7 +12,7 @@ document_type: privacy
 document_label: 隱私權政策
 support_url: /apps/nemoji/support/
 privacy_url: /apps/nemoji/privacy/zh-tw/
-updated_at: 2026-10-17
+updated_at: 2026-11-01
 updated_label: 更新日期
 support_nav_label: 支援
 privacy_nav_label: 隱私權政策
@@ -74,7 +74,7 @@ Meta可能依其政策在境外處理資料。保存期限、刪除與權利行�
 ## 聯絡與政策變更
 
 營運者：DDak Labs / NEMOJI  
-NEMOJI 聯絡信箱：[ezkoon@gmail.com](mailto:ezkoon@gmail.com)  
+NEMOJI 聯絡信箱：[ddaklabs@gmail.com](mailto:ddaklabs@gmail.com)  
 公布及生效日期：2026 年 10 月 17 日
 
 相關功能或服務變更時，我們會更新本頁並標示適用日期。

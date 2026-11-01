@@ -12,7 +12,7 @@ document_type: privacy
 document_label: プライバシーポリシー
 support_url: /apps/nemoji/support/
 privacy_url: /apps/nemoji/privacy/ja-jp/
-updated_at: 2026-10-17
+updated_at: 2026-11-01
 support_nav_label: Support
 privacy_nav_label: プライバシーポリシー
 ---
@@ -65,7 +65,7 @@ Metaは自社のポリシーに従って国外で情報を処理する場合が�
 
 ## お問い合わせと変更
 運営：DDak Labs / NEMOJI  
-お問い合わせ：[ezkoon@gmail.com](mailto:ezkoon@gmail.com)  
+お問い合わせ：[ddaklabs@gmail.com](mailto:ddaklabs@gmail.com)  
 公開・施行日：2026年10月17日
 
 関連する機能やサービスが変わる場合、このページと適用日を更新します。

@@ -12,7 +12,7 @@ support_url: /apps/nemoji/support/
 privacy_url: /apps/nemoji/privacy/
 ---
 
-문의 / Contact / お問い合わせ: [ezkoon@gmail.com](mailto:ezkoon@gmail.com)
+문의 / Contact / お問い合わせ: [ddaklabs@gmail.com](mailto:ddaklabs@gmail.com)
 
 앱 버전, 기기와 운영체제, 문제가 생기는 순서를 알려 주세요. 개인적인 글은 보내지 않아도 됩니다. 글은 기기에 저장되므로 앱을 삭제하기 전에 필요한 작품을 저장·공유해 주세요.
 

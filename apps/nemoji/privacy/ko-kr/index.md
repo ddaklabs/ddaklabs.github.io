@@ -12,7 +12,7 @@ document_type: privacy
 document_label: 개인정보처리방침
 support_url: /apps/nemoji/support/
 privacy_url: /apps/nemoji/privacy/ko-kr/
-updated_at: 2026-10-17
+updated_at: 2026-11-01
 support_nav_label: Support
 privacy_nav_label: 개인정보처리방침
 ---
@@ -65,7 +65,7 @@ Meta는 자체 정책에 따라 정보를 국외에서 처리할 수 있습니�
 
 ## 문의 및 변경
 운영: DDak Labs / NEMOJI  
-네모지 문의: [ezkoon@gmail.com](mailto:ezkoon@gmail.com)  
+네모지 문의: [ddaklabs@gmail.com](mailto:ddaklabs@gmail.com)  
 공고·시행일: 2026년 10월 17일
 
 앱 기능이나 서비스가 바뀌면 이 페이지를 수정하고 적용 날짜를 표시합니다.

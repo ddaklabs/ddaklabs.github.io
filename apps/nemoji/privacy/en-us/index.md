@@ -12,7 +12,7 @@ document_type: privacy
 document_label: Privacy Policy
 support_url: /apps/nemoji/support/
 privacy_url: /apps/nemoji/privacy/en-us/
-updated_at: 2026-10-17
+updated_at: 2026-11-01
 support_nav_label: Support
 privacy_nav_label: Privacy Policy
 ---
@@ -65,7 +65,7 @@ Contact us below for access, correction, deletion, restriction or consent withdr
 
 ## Contact and changes
 Operator: DDak Labs / NEMOJI  
-NEMOJI contact: [ezkoon@gmail.com](mailto:ezkoon@gmail.com)  
+NEMOJI contact: [ddaklabs@gmail.com](mailto:ddaklabs@gmail.com)  
 Published and effective: October 17, 2026
 
 We update this page and its effective date when relevant app features or services change.
